@@ -6,7 +6,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
+.contenedor--todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
 
 .section--one{
     display: flex;
@@ -14,7 +19,51 @@
     width: 100%;
     max-width: 380px;
     position: relative;
-    top: -5px;
-    left: 10px;
+    top: 25px;
+}
 
+.section--one caja--logo{
+    padding-left: 20px;
+}
+
+.caja--lnks button{
+    right: 25px;
+    margin-right: 40px;
+}
+
+.section--two{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 180px;
+    right: 220px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(201, 170, 255, 0.5);
+    border-radius: 14px;
+}
+
+.section--two button{
+    position: relative;
+    top: 100px;
+    right: 300px;
+}
+
+.section--two button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+    outline: none;
+    transition: all 300ms;
+}
+
+.section--two button:hover{
+    background: #fff;
+    color: #D3CBFF;
 }
