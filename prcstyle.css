@@ -14,12 +14,14 @@
 }
 
 .section--one{
+    padding: 20px 50px;
+    background: black;
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 380px;
+    max-width: 500px;
     position: relative;
-    top: 25px;
+    top: -1px;
 }
 
 .section--one caja--logo{
@@ -33,11 +35,11 @@
 
 .section--two{
     width: 100%;
-    padding: 10px 20px;
+    padding: 80px 150px;
     display: flex;
     justify-content: center;
     position: relative;
-    top: 180px;
+    top: 50px;
     right: 220px;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -45,9 +47,23 @@
     border-radius: 14px;
 }
 
+.section--two div{
+    position: relative;
+    top: -70px;
+    right: 80px;
+    margin: 50px 40px;
+    color: white;
+    transition: all 500ms;
+}
+
+.section--two div h3{
+    position: relative;
+    top: 15px;
+}
+
 .section--two button{
     position: relative;
-    top: 100px;
+    top: 120px;
     right: 300px;
 }
 
@@ -58,12 +74,14 @@
     background: transparent;
     font-weight: 600;
     cursor: pointer;
-    color: black;
+    color: white;
     outline: none;
     transition: all 300ms;
+    width: max-content;
+    padding: 15px 15px;
 }
 
 .section--two button:hover{
     background: #fff;
-    color: #D3CBFF;
+    color: black;
 }
