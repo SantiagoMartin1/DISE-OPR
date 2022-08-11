@@ -6,6 +6,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    background-image: url(./bki2.jpg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .contenedor--todo{
     width: 100%;
     max-width: 800px;
@@ -14,17 +22,25 @@
 }
 
 .section--one{
-    width: 100%;
-    max-width: 800px;
+    width: 1400px;
+    height: 75px;
+    /*max-width: 800px;*/
     margin: auto;
+    right: 290px;
     position: relative;
-    background: black;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(201, 170, 255, 0.5);
+    border-radius: 14px;   
+    padding: 30px 100px;
+    display: flex;
+    justify-content: center;
 }
 
 .caja--lnks{
     position: absolute;
-    top: 30px;
-    right: -190px;
+    top: 25px;
+    right: 50px;
 }
 
 .caja--lnks .btn a{
@@ -44,7 +60,7 @@
 
 .caja--lnks .btn a:hover {
     background: #fff;
-    border: 1px solid #000;
+    border: 1px solid #fff;
     color: #D3CBFF;
     font-weight: bold; 
 }
@@ -52,6 +68,12 @@
 .caja--lnks .btn {
     margin: 0 10px;
     display: inline-block;
+}
+
+.caja--lnks .caja--logo{
+    position: relative;
+    top: 25px;
+    right: 100px;
 }
 
 .section--two{
