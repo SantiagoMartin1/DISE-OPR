@@ -30,7 +30,7 @@ body{
     position: relative;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: rgba(201, 170, 255, 0.5);
+    background-color: black;
     border-radius: 14px;   
     padding: 30px 100px;
     display: flex;
