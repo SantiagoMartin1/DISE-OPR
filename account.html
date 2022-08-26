@@ -11,9 +11,27 @@
                 <h1>Mi cuenta</h1>
             </div>
             <div class="contenedor--links">
-                <h2>Configuración</h2>
-                <h2>Mis archivos</h2>
-                <h2>Subir archivos</h2>
+                <nav class="nevegacion">
+                    <ul class="menu">
+                        <li><a href="#">Configuración</a>
+                            <ul class="ul--config">
+                                <li><a href=""></a>aaa</li>
+                                <li><a href=""></a>aaa</li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Mis archivos</a></li>
+                        <li><a href="#">Subir archivos</a>
+                            <ul class="ul--push">
+                               <div class="drag--area">
+                                   <h2>Arrastra y suelta imágenes</h2>
+                                   <span>0</span>
+                                   <button>Selecciona tus archivos</button>
+                                   <input type="file" name="" id="input--file" hidden multiple>
+                               </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <div class="contenedor--configuracion">
                 <form action="#">
@@ -29,6 +47,8 @@
                 
             </div>
         </div>
+        <script src="account.js"></script>
+        <div id="preview"></div>
     </body>
 
 </html>
