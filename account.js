@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const dropArea = document.querySelector(".drag--area");
+  
+    const dropArea = document.querySelector(".drag-area");
     const dragText = dropArea.querySelector("h2");
     const button = dropArea.querySelector("button");
     const input = dropArea.querySelector("#input--file");
@@ -13,9 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
         dropArea.classList.add("active");
         showFiles(files);
         dropArea.classList.remove("active");
-    })
+    });
 
-//hacer el drag over
+    //hacer el drag over
     dropArea.addEventListener("dragover", (e) => {
         e.preventDefault();
         files = e.dataTrasnfer.files;
@@ -88,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
       
     
-      function uploadFile(file) {
+      async function uploadFile(file, id) {
         const formData = new formData();
         formData.append("file", file);
     
@@ -103,11 +104,12 @@ document.addEventListener("DOMContentLoaded", () => {
           document.querySelector(
             `#${id} .status-text`
             ).innerHTML = `<span class="success">Archivo subido correctamente...</span>`;
-    
-        } catch(error) {
+        
+        } 
+        catch(error) {
           document.querySelector(
             `#${id} .status-text`
             ).innerHTML = `<span class="failure">El archivo no ha podido subirse...</span>`;
         }
-      }
+    }
 })
