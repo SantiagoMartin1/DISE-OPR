@@ -28,15 +28,47 @@
     height: 35px;
     font-weight: bold;
     font-size: 30px;
-    border: 2px solid red;
+    border: 2px solid rgba(201, 170, 255, 0.5);
+    border-radius: 14px;
     cursor: pointer;
     outline: none;
     transition: all 300ms;
     line-height: 80px;
 }
 
+/*configuracion*/
+.contenedor--configuracion{
+    position: absolute;
+    padding: 50px;
+    top: 200px;
+    left: 500px;
+}
 
+.config--nombre{
+    position: absolute;
+    padding: 15px;
+    top: -10px;
+    left: 5px;
+}
 
+.config--idioma{
+    position: absolute;
+    padding: 5px;
+    top: 150px;
+    left: 5px;
+}
+
+.config--nombre h3{
+    font-size: 28px;
+}
+
+.config--nombre .txt--name{
+    position: absolute;
+    top: 22px;
+    left: 325px;
+}
+
+/*configuracion*/
 
 /*subir archivos*/
 .drag-area {
