@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My account</title>
+    <link rel="stylesheet" type="text/css" href="account.css">
+</head>
+<body>
+    <div class="caja--todo">
+        <div class="contenedor--titulos">
+            <h1>Mi cuenta</h1>
+        </div>
+        <div class="contenedor--links">
+            <nav class="nevegacion">
+                <ol class="menu">
+                    <li class="submenu--config"><a href="#">Configuración</a></li>
+                    <li class="submenu--archivos"><a href="#">Mis archivos</a></li>
+                    <li class="submenu--subir"><a href="#">Subir archivos</a></li>
+                </ol>
+            </nav>
+        </div>
+<!-- fetch("http://localhost:3000/datos-del-usuario") -->
+        <div class="contenedor--configuracion">
+            <div class="config--idioma">
+                <form action="#">
+                    <label for="Idiomas">Cambiar Idioma: </label>
+                    <select name="Idiomas" id="Idioma">
+                        <option value="Ingles">Ingles</option>
+                        <option value="Portugues">Portugues</option>
+                        <option value="Spanish">Spanish</option>
+                    </select>
+                    <br><br>
+                    <input type="submit" value="Guardar cambios">
+                </form>
+            </div>
+            <div class="config--nombreContraseña">
+                <a href="#">Cambiar nombre de usuario</a>
+                <a href="#">Cambiar contraseña</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
