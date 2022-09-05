@@ -12,7 +12,7 @@ var caja_trasera_register = document.querySelector(".caja__trasera-register");
     //FUNCIONES
 
     function myFunction() {
-        alert("I am an alert box!");
+        alert("Iniciaste sesion " + $usu_login);
     }
 
 function anchoPage(){
