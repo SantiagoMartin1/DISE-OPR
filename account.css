@@ -68,6 +68,33 @@
     left: 325px;
 }
 
+.config--nombre .btn--name{
+    position: absolute;
+    top: 70px;
+    left: 175px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+    background-color: #D3CBFF;
+    outline: none;
+    transition: all 300ms;
+}
+
+.config--nombre .btn--name:hover{
+    background: #fff;
+    color: #fff;
+    background-color: #9d8dfc;
+}
+
+.config--Contraseña{
+    position: absolute;
+    
+}
+
 /*configuracion*/
 
 /*subir archivos*/
