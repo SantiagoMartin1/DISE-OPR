@@ -148,7 +148,7 @@ section{
     position: absolute;
     padding: 10px 10px;
     top: 650px;
-    left: 700px;
+    left: 650px;
 }
 
 /*CARD CODIGOS*/
@@ -159,6 +159,14 @@ section{
     left: -400px;
     background-color: black;
     border-radius: 11px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card--codigos:hover{
+    width: 270px;
+    height: 380px;
+    transition: 0.3em;;
 }
 
 .img--codigos{
@@ -190,6 +198,7 @@ section{
     background-color: black;
     border-radius: 11px;
 }
+
 
 .img--expla{
     position: absolute;
