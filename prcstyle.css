@@ -151,16 +151,93 @@ section{
     left: 700px;
 }
 
+/*CARD CODIGOS*/
 .card--codigos{
     position: absolute;
-    padding: 100px 62px;
+    padding: 175px 110px;
+    top: -20px;
     left: -400px;
-    background-color: #aa9eed;
+    background-color: black;
     border-radius: 11px;
 }
 
 .img--codigos{
-    
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 65%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.p_codigos{
+    position: absolute;
+    padding: 5px 5px;
+    top: 275px;
+    left: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+/*FIN CARD CODIGOS*/
+
+/*CARD EXPLA*/
+
+.card--expla{
+    position: absolute;
+    top: -20px;
+    left: 350px;
+    padding: 175px 110px;
+    background-color: black;
+    border-radius: 11px;
+}
+
+.img--expla{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 65%;
+    height: 67%;
+    border-radius: 10px;
+}
+
+.p_expla{
+    position: absolute;
+    padding: 5px 5px;
+    top: 260px;
+    left: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+/*FIN CARD EXPLA*/
+
+/*CARD USABILIDAD*/
+.card--usabilidad{
+    position: absolute;
+    padding: 175px 110px;
+    top: -20px;
+    left: -25px;
+    background-color: black;
+    border-radius: 11px;
+}
+
+.img--usabilidad{
+    position: absolute;
+    top: 20px;
+    left: 42px;
+    width: 65%;
+    height: 66%;
+    border-radius: 10px;
+}
+
+.p_usabilidad{
+    position: absolute;
+    padding: 5px 5px;
+    color: #fff;
+    top: 260px;
+    left: 10px;
+    font-size: 14px;
 }
 
 /*FIN DEL SECTION*/
