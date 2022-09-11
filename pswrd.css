@@ -13,6 +13,14 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
+
+footer{
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+}
+
 .caja--todo{
     position: absolute;
     padding: 70px 80px;
@@ -116,4 +124,3 @@ body{
     border: 2px solid rgba(209, 205, 205, 0.781);
     border-radius: 14px;
 }
-

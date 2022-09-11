@@ -5,126 +5,204 @@
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
 }
-
-body{
-    background-image: url(./bki2.jpg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.contenedor--todo{
+/*HEADER*/
+header{
+    position: absolute;
     width: 100%;
-    max-width: 800px;
-    margin: auto;
-    position: relative;
+    padding: 30px;
+    background-color: black;
 }
 
-.section--one{
-    width: 1400px;
-    height: 75px;
-    /*max-width: 800px;*/
-    margin: auto;
-    right: 290px;
-    position: relative;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background-color: black;
-    border-radius: 14px;   
-    padding: 30px 100px;
-    display: flex;
-    justify-content: center;
+.caja--logo{
+    position: absolute;
+    padding: 10px 10px;
+    top: 12px;
+    left: 25px;
+}
+
+.user_logo{
+    width: 30px;
+    height: 30px;
+}
+
+.caja--logo .img--logo{
+
 }
 
 .caja--lnks{
     position: absolute;
-    top: 25px;
-    right: 50px;
+    padding: 2px 2px;
+    top: 17px;
+    left: 1200px;
 }
 
-.caja--lnks .btn a{
+.btn_Log{
     position: relative;
     padding: 10px 10px;
-    background: transparent;
-    color: white;
-    width: 220px;
-    height: 35px;
-    font-weight: bold;
-    font-size: 14px;
-    border: 2px solid #fff;
+    top: -10px;
+    left: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
+    color: #aa9eed;
     outline: none;
-    transition: all 300ms;
 }
 
-.caja--lnks .btn a:hover {
-    background: #fff;
-    border: 1px solid #fff;
-    color: #D3CBFF;
-    font-weight: bold; 
+.btn_Log:hover{
+    color: #dad4fb;
 }
 
-.caja--lnks .btn {
-    margin: 0 10px;
-    display: inline-block;
-}
-
-.caja--lnks .caja--logo{
+.btn_Reg{
     position: relative;
-    top: 25px;
-    right: 100px;
+    padding: 10px 10px;
+    top: -10px;   
+    left: 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #aa9eed;
+    outline: none;
 }
+    
+.btn_Reg:hover{
+    color: #dad4fb;
+}
+/*FIN DEL HEADER*/
 
-.section--two{
+/*MAIN*/
+main{
+    position: absolute;
     width: 100%;
-    padding: 80px 150px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 50px;
-    right: 220px;
+    padding: 150px;
+    text-align: center;
+    top: 100px;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background-color: rgba(201, 170, 255, 0.5);
     border-radius: 14px;
 }
 
-.section--two div{
-    position: relative;
-    top: -70px;
-    right: 80px;
-    margin: 50px 40px;
-    color: white;
-    transition: all 500ms;
+.caja--textos{
+    position: absolute;
+    padding: 10px 10px;
+    top: 100px;
+    left: 80px;   
 }
 
-.section--two div h3{
-    position: relative;
-    top: 15px;
+.titulo{
+    position: absolute;
+    top: -20px;
+    left: 20px;
 }
 
-.section--two button{
+.p--info{
     position: relative;
-    top: 120px;
-    right: 300px;
+    top: 40px;
+    left: -60px;
+    font-size: 17px;
 }
 
-.section--two button{
+.b{
+    color: #aa9eed;
+}
+
+.btn_Pyp{
+    position: absolute;
     padding: 10px 40px;
-    border: 2px solid #fff;
+    top: 135px;
+    left: 10px;
+    border-radius: 14px;
     font-size: 14px;
-    background: transparent;
+    background: #aa9eed;
     font-weight: 600;
     cursor: pointer;
-    color: white;
+    color: #fff;
     outline: none;
-    transition: all 300ms;
-    width: max-content;
-    padding: 15px 15px;
 }
 
-.section--two button:hover{
-    background: #fff;
-    color: black;
+.btn_Pyp:hover{
+    background-color: #dad4fb;
 }
+
+.caja--img{
+    position: absolute;
+    padding: 10px 10px;
+    top: 160px;
+    left: 1200px;
+}
+
+.console--img{
+    position: relative;
+    top: -115px;
+    left: -150px;
+    width: 350px;
+    height: 200px;
+    border-radius: 15px;
+}
+/*FIN DEL MAIN*/
+
+/*COMIENZO DEL SECTION*/
+section{
+    position: absolute;
+    padding: 10px 10px;
+    top: 650px;
+    left: 700px;
+}
+
+.card--codigos{
+    position: absolute;
+    padding: 100px 62px;
+    left: -400px;
+    background-color: #aa9eed;
+    border-radius: 11px;
+}
+
+.img--codigos{
+    
+}
+
+/*FIN DEL SECTION*/
+
+/*FOOTER*/
+.footer--container{
+    position: absolute;
+    padding: 10px 10px;
+    top: 1200px;
+}
+
+.footer--p{
+    position: relative;
+    font-size: 12px;
+}
+
+.footer--soc{
+    position: absolute;
+    left: 700px;
+}
+
+.footer--contact{
+    position: absolute;
+    left: 1100px;
+}
+
+.footer--copy{
+    position: relative;
+    top: 80px;
+    left: 550px;
+}
+
+.footer--info{
+    position: absolute;
+
+}
+
+
+.logo--ig{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+/*FIN DEL FOOTER*/
