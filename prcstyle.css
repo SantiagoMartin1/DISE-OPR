@@ -166,7 +166,7 @@ section{
 .card--codigos:hover{
     width: 270px;
     height: 380px;
-    transition: 0.3em;;
+    transition: 0.3em;
 }
 
 .img--codigos{
@@ -197,8 +197,15 @@ section{
     padding: 175px 110px;
     background-color: black;
     border-radius: 11px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
+.card--expla:hover{
+    width: 270px;
+    height: 380px;
+    transition: 0.3em;
+}
 
 .img--expla{
     position: absolute;
@@ -229,6 +236,14 @@ section{
     left: -25px;
     background-color: black;
     border-radius: 11px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card--usabilidad:hover{
+    width: 270px;
+    height: 380px;
+    transition: 0.3em;
 }
 
 .img--usabilidad{
@@ -252,43 +267,91 @@ section{
 /*FIN DEL SECTION*/
 
 /*FOOTER*/
+
 .footer--container{
     position: absolute;
     padding: 10px 10px;
     top: 1200px;
 }
 
+.footer_hr{
+  position: absolute;
+  height: 2px;
+  width: 1300px;
+  background-color: red;
+}
+
+/*FOOTER INFO*/
+.footer--info{
+    position: relative;
+    padding: 10px 10px;
+    left: 325px;
+}
+
+.footer_h5{
+    position: relative;
+    left: -5px;
+    padding: 5px 5px;
+}
+
 .footer--p{
     position: relative;
+    left: 0px;
     font-size: 12px;
 }
+/*FIN FOOTER INFO*/
 
+/*FOOTER SOC*/
 .footer--soc{
     position: absolute;
-    left: 700px;
+    top: 20px;
+    left: 625px;
 }
-
-.footer--contact{
-    position: absolute;
-    left: 1100px;
-}
-
-.footer--copy{
-    position: relative;
-    top: 80px;
-    left: 550px;
-}
-
-.footer--info{
-    position: absolute;
-
-}
-
 
 .logo--ig{
     position: absolute;
     width: 50px;
     height: 50px;
+
 }
+/*FIN FOOTER SOC*/
+
+/*FOOTER CONTACT*/
+.footer--contact{
+    position: absolute;
+    padding: 5px;
+    left: 1000px;
+}
+
+.contact_a{
+    position: absolute;
+    padding: 5px 5px;
+    top: -65px;
+    left: -175px;
+}
+
+.contact_img{
+    position: absolute;
+    width: 160px;
+    height: 80px;
+}
+/*FIN FOOTER CONTACT*/
+
+/*FOOTER COPY*/
+.footer--copy{
+    position: relative;
+    padding: 10px 10px;
+    top: 20px;
+    left: 535px;
+}
+
+.copy_p{
+    position: relative;
+    font-size: 10px;
+}
+
+/*FIN FOOTER COPY*/
+
+
 
 /*FIN DEL FOOTER*/
