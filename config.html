@@ -9,39 +9,43 @@
     <link rel="stylesheet" type="text/css" href="account.css">
 </head>
 <body>
-    <div class="caja--todo">
-        <div class="contenedor--titulos">
-            <h1>Mi cuenta</h1>
-        </div>
-        <div class="contenedor--links">
-            <nav class="nevegacion">
-                <ol class="menu">
-                    <a href="#">Configuración</a>
-                    <a href="#">Mis archivos</a>
-                    <a href="#">Subir archivos</a>
-                </ol>
-            </nav>
-        </div>
-<!-- fetch("http://localhost:3000/datos-del-usuario") -->
-        <div class="contenedor--configuracion">
-            <div class="config--nombre">
-                <h3>$usu_login</h3>
-                <form action="#">
-                    <input type="text" class="txt--name">
-                    <input type="submit" value="Cambiar nombre" class="btn--name">
-                </form>
+    <header>
+        <!--PEGAR ACA EL HEADER DE PRC-->
+    </header>
+    
+    <nav>
+        <ol class="nav--menu">
+            <a href="#">Configuración</a>
+            <a href="#">Mis archivos</a>
+            <a href="#">Subir archivos</a>
+        </ol>
+    </nav>
+                        <!-- fetch("http://localhost:3000/datos-del-usuario") -->
+
+        <main>
+            <div class="main--configuracion">
+                <div class="config--nombre">
+                    <h3>$usu_login</h3>
+                    <form action="#">
+                        <input type="text" class="txt--name">
+                        <input type="submit" value="Cambiar nombre" class="btn--name">
+                    </form>
+                </div>
+                <div class="main--idioma">
+                    <form action="#">
+                        <label for="Idiomas">Cambiar Idioma: </label>
+                        <select name="Idiomas" id="Idioma">
+                            <option value="Ingles">Ingles</option>
+                            <option value="Esnpaniol">Español</option>
+                        </select>
+                        <input type="submit" value="Guardar cambios">
+                    </form>
+                </div>
             </div>
-            <div class="config--idioma">
-                <form action="#">
-                    <label for="Idiomas">Cambiar Idioma: </label>
-                    <select name="Idiomas" id="Idioma">
-                        <option value="Ingles">Ingles</option>
-                        <option value="Esnpaniol">Español</option>
-                    </select>
-                    <input type="submit" value="Guardar cambios">
-                </form>
-            </div>
-        </div>
-    </div>
+        </main>
+
+    <footer>
+        <!--PEGAR ACA EL FOOTER DE PRC-->
+    </footer>
 </body>
 </html>
