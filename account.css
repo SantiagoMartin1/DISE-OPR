@@ -1,3 +1,25 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.contenedor--links{
+    padding: 80px;
+    position: absolute;
+    left: 40px;
+    top: 150px;
+}
+
+.navegacion a{
+    padding: 30px;
+}
+
+
 .drag-area {
     border: 5px dashed #ddd;
     width:  500px;
