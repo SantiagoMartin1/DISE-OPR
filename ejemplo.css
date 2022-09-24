@@ -1,40 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
 
-main{
+.header--container{
     width: 100%;
+    height: 50px;
+    position: fixed;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: rgba(201, 170, 255, 0.5);
+    background-color: black;
+    padding: 0;
 }
-.contenedor--main{
-    width: 100%;
-    min-height: 100vh; 
-    display: flex; 
+ 
+.header--lnks{
+    display: inline-block;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
+    padding: 15px;
+}
+ 
+.a{
+    margin-left: 1200px;
+    padding: 20px 20px;
+}
+ 
+.user-logo{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 5%;
+    height: 5%;
 }
 
-.console--img{
-    width: 350px;
-    height: 200px;
-    border-radius: 5px;
-    margin-left: 850px;
-    margin-top: 200px;
+
+.contenedor-main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .caja--main{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;    
+    margin-top: 300px;
+   /* background-color: rgba(201, 170, 255, 0.5);*/
+    padding: 50px 50px;
+    border-radius: 5px;
 }
 
+.caja--img{
+    display: flex;
+    align-items: flex-end;
+    margin-left: 75px;
+}
 
+.console--img{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
 
-.caja--textos{
-    padding: 10px 10px;
-    margin-left: -600px;
+.btn_Pyp{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: .2s all ease;
+}
+
+.btn_Pyp:hover{
+    background: #D3CBFF;
+    color: #fff;
 }
 
 .section-main {
