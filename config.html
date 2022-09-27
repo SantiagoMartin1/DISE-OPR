@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My account</title>
+    <link rel="stylesheet" type="text/css" href="account.css">
+</head>
+<body>
+    <header>
+        <!--PEGAR ACA EL HEADER DE PRC-->
+    </header>
+    
+    <nav>
+        <ol class="nav--menu">
+            <a href="#">Configuración</a>
+            <a href="#">Mis archivos</a>
+            <a href="#">Subir archivos</a>
+        </ol>
+    </nav>
+                        <!-- fetch("http://localhost:3000/datos-del-usuario") -->
+
+        <main>
+            <div class="main--configuracion">
+                <div class="config--nombre">
+                    <h3>$usu_login</h3>
+                    <form action="#">
+                        <input type="text" class="txt--name">
+                        <input type="submit" value="Cambiar nombre" class="btn--name">
+                    </form>
+                </div>
+                <div class="main--idioma">
+                    <form action="#">
+                        <label for="Idiomas">Cambiar Idioma: </label>
+                        <select name="Idiomas" id="Idioma">
+                            <option value="Ingles">Ingles</option>
+                            <option value="Esnpaniol">Español</option>
+                        </select>
+                        <input type="submit" value="Guardar cambios">
+                    </form>
+                </div>
+            </div>
+        </main>
+
+    <footer>
+        <!--PEGAR ACA EL FOOTER DE PRC-->
+    </footer>
+</body>
+</html>

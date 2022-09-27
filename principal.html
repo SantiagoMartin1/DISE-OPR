@@ -5,53 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="prcstyle.css"> 
+    <!-- <link rel="stylesheet" type="text/css" href="prcstyle.css"> -->
+    <link rel="stylesheet" href="ejemplo.css">
 </head>
 <body>
-    <main>
-
-        <div class="contenedor--todo">
-
-            <div class="section--one">
-                <div class="caja--logo">
-                    <img src="#" alt="#">
-                </div>
-                <div class="caja--lnks">
-                    <div class="btn">
-                        <a href="#">My account</a>
-                    </div>
-                    <div class="btn">
-                        <a href="file:///E:/Documents/GitHub/DISE-OPR/index.html">Iniciar Sesión</a>
-                    </div>
-                    <div class="btn">
-                        <a href="file:///E:/Documents/GitHub/DISE-OPR/index.html">Registrarme</a>
-                    </div>
-                </div>
-               
+    <header>
+        <div class="header--container">
+            <div class="caja--logo">
+                <a class="img-logo" href="#"><img src="#" alt="#"></a>
             </div>
-    
-            <div class="section--two">
-                <div class="caja--textos">
-                    <h1>Perfect Pitch</h1>
-                    <h3>Esto es un sistema de traducción de música</h3>
-                </div>
-                <div class="caja--empezar">
-                    <button>Lets P&P</button>
-                </div>
+            <div class="caja--lnks">
+                    <a href="account.html"><img class="user_logo" src="user--logo.png" alt="logo_user"></a>
+                    <a href="index.html" class="btn_Log">Iniciar Sesión</a>
+                    <a href="index.html" class="btn_Reg">Registrarme</a>
             </div>
-    
-            <div class="section--three">
-                <div class="caja--aboutUs">
-                    <div class="card--one">
-                        <img class="img--persona" src="#" alt="#">
-                        <p>lorem ...</p>
-                    </div>
-                </div>    
-            </div>    
-
         </div>
-        
+    </header>
+    <main>
+        <div class="contenedor--main">
+            <div class="caja--main">
+                <div class="caja--textos">
+                    <h1 class="titulo">Perfect Pitch</h1>
+                    <p class="p--info">Página Web <b class="b">exclusivamente</b> pensada para aquellas nuevas personas que <b class="b">aspiran</b> a la música<br> y para quienes buscan algo más profesional con lo que mejorar su nivel de <b class="b">edición músical</b> sea algo fácil</p>
+                    <a class="btn_Pyp" href="#">Lets P&p</a>
+                </div>
+                <div class="caja--img">
+                    <img class="console--img" src="consola.png" alt="ilustrative_img">
+                </div>
+            </div>
+        </div>
     </main>
+    <section class="section-main">
+            <div class="card">
+                <img class="card-img" src="teantiveImg.PNG" alt="teantiveImg">
+                <p class="card-texto">Un diseño adaptado a lo <b class="b">moderno</b> pero único por donde se lo vea</p>
+            </div>
+            <div class="card">
+                <img class="card-img" src="FL_Studio.png" alt="#">
+                <p class="card-texto">Pensamos en nuevos métodos de usabilidad avanzados, <b class="b">nunca</b> antes descubiertos por la humanidad</p>
+            </div>
+            <div class="card">
+                <img class="card-img" src="img_expla.png" alt="#">
+                <p class="card-texto">Utilizamos los metodos de la <b class="b">trasformada de Fourier</b>, (ahora es de la <b class="b">crew</b>)</p>
+            </div>
+    </section>
+    <footer>
+        <div class="footer--container">
+            <hr class="footer_hr">
+            <div class="footer--info">
+                <h5 class="footer_h5">Sobre nosotros</h5>
+                <p class="footer--p">bla bla bla bla</p>
+            </div>
+            <div class="footer--soc">
+                <a href="https://www.instagram.com/santi_.martin/"><img class="logo--ig" src="./logo--ig.png" alt="instagram"></a>
+            </div>
+            <div class="footer--contact">
+                <a class="contact_a" href="https://campus.ort.edu.ar/secundaria/belgrano/tic/2022-nr4d"><img class="contact_img" src="ort-logo.png" alt="logo_ort"></a>
+            </div>
+            <div class="footer--copy">
+                <p class="copy_p"><img src="#" alt="img_logo"> @ 2022 Perfect Pitch , 4 D TIC</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

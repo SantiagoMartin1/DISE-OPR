@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
         dropArea.classList.remove("active");
     });
 
-    //hacer el drag over
     dropArea.addEventListener("dragover", (e) => {
         e.preventDefault();
         files = e.dataTrasnfer.files;
@@ -52,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
       function processFile(file) {
         const docType = file.type;
-        const validExtensions = ['image/jpeg', 'image/jpg', 'image/png', 'image/gif'];
+        const validExtensions = ['audio/mp3', 'audio/mp4', 'audio/wav', 'audio/midi', 'audio/flac', 'audio/alac'];
       
         if (validExtensions.includes(docType)) {
           // archivo válido

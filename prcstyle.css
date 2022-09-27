@@ -5,126 +5,353 @@
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
 }
-
-body{
-    background-image: url(./bki2.jpg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.contenedor--todo{
+/*HEADER*/
+header{
+    position: absolute;
     width: 100%;
-    max-width: 800px;
-    margin: auto;
-    position: relative;
+    padding: 30px;
+    background-color: black;
 }
 
-.section--one{
-    width: 1400px;
-    height: 75px;
-    /*max-width: 800px;*/
-    margin: auto;
-    right: 290px;
-    position: relative;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background-color: black;
-    border-radius: 14px;   
-    padding: 30px 100px;
-    display: flex;
-    justify-content: center;
+.caja--logo{
+    position: absolute;
+    padding: 10px 10px;
+    top: 12px;
+    left: 25px;
+}
+
+.user_logo{
+    width: 30px;
+    height: 30px;
+}
+
+.caja--logo .img--logo{
+
 }
 
 .caja--lnks{
     position: absolute;
-    top: 25px;
-    right: 50px;
+    padding: 2px 2px;
+    top: 17px;
+    left: 1200px;
 }
 
-.caja--lnks .btn a{
+.btn_Log{
     position: relative;
     padding: 10px 10px;
-    background: transparent;
-    color: white;
-    width: 220px;
-    height: 35px;
-    font-weight: bold;
-    font-size: 14px;
-    border: 2px solid #fff;
+    top: -10px;
+    left: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
+    color: #aa9eed;
     outline: none;
-    transition: all 300ms;
 }
 
-.caja--lnks .btn a:hover {
-    background: #fff;
-    border: 1px solid #fff;
-    color: #D3CBFF;
-    font-weight: bold; 
+.btn_Log:hover{
+    color: #dad4fb;
 }
 
-.caja--lnks .btn {
-    margin: 0 10px;
-    display: inline-block;
-}
-
-.caja--lnks .caja--logo{
+.btn_Reg{
     position: relative;
-    top: 25px;
-    right: 100px;
+    padding: 10px 10px;
+    top: -10px;   
+    left: 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #aa9eed;
+    outline: none;
 }
+    
+.btn_Reg:hover{
+    color: #dad4fb;
+}
+/*FIN DEL HEADER*/
 
-.section--two{
+/*MAIN*/
+main{
+    position: absolute;
     width: 100%;
-    padding: 80px 150px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 50px;
-    right: 220px;
+    padding: 150px;
+    text-align: center;
+    top: 100px;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background-color: rgba(201, 170, 255, 0.5);
     border-radius: 14px;
 }
 
-.section--two div{
-    position: relative;
-    top: -70px;
-    right: 80px;
-    margin: 50px 40px;
-    color: white;
-    transition: all 500ms;
+.caja--textos{
+    position: absolute;
+    padding: 10px 10px;
+    top: 100px;
+    left: 80px;   
 }
 
-.section--two div h3{
-    position: relative;
-    top: 15px;
+.titulo{
+    position: absolute;
+    top: -20px;
+    left: 20px;
 }
 
-.section--two button{
+.p--info{
     position: relative;
-    top: 120px;
-    right: 300px;
+    top: 40px;
+    left: -60px;
+    font-size: 17px;
 }
 
-.section--two button{
+.b{
+    color: #aa9eed;
+}
+
+.btn_Pyp{
+    position: absolute;
     padding: 10px 40px;
-    border: 2px solid #fff;
+    top: 135px;
+    left: 10px;
+    border-radius: 14px;
     font-size: 14px;
-    background: transparent;
+    background: #aa9eed;
     font-weight: 600;
     cursor: pointer;
-    color: white;
+    color: #fff;
     outline: none;
-    transition: all 300ms;
-    width: max-content;
-    padding: 15px 15px;
 }
 
-.section--two button:hover{
-    background: #fff;
-    color: black;
+.btn_Pyp:hover{
+    background-color: #dad4fb;
 }
+
+.caja--img{
+    position: absolute;
+    padding: 10px 10px;
+    top: 160px;
+    left: 1200px;
+}
+
+.console--img{
+    position: relative;
+    top: -115px;
+    left: -150px;
+    width: 350px;
+    height: 200px;
+    border-radius: 15px;
+}
+/*FIN DEL MAIN*/
+
+/*COMIENZO DEL SECTION*/
+section{
+    position: absolute;
+    padding: 10px 10px;
+    top: 650px;
+    left: 650px;
+}
+
+/*CARD CODIGOS*/
+.card--codigos{
+    position: absolute;
+    padding: 175px 110px;
+    top: -20px;
+    left: -400px;
+    background-color: black;
+    border-radius: 11px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card--codigos:hover{
+    width: 270px;
+    height: 380px;
+    transition: 0.3em;
+}
+
+.img--codigos{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 65%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.p_codigos{
+    position: absolute;
+    padding: 5px 5px;
+    top: 275px;
+    left: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+/*FIN CARD CODIGOS*/
+
+/*CARD EXPLA*/
+
+.card--expla{
+    position: absolute;
+    top: -20px;
+    left: 350px;
+    padding: 175px 110px;
+    background-color: black;
+    border-radius: 11px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card--expla:hover{
+    width: 270px;
+    height: 380px;
+    transition: 0.3em;
+}
+
+.img--expla{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 65%;
+    height: 67%;
+    border-radius: 10px;
+}
+
+.p_expla{
+    position: absolute;
+    padding: 5px 5px;
+    top: 260px;
+    left: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+/*FIN CARD EXPLA*/
+
+/*CARD USABILIDAD*/
+.card--usabilidad{
+    position: absolute;
+    padding: 175px 110px;
+    top: -20px;
+    left: -25px;
+    background-color: black;
+    border-radius: 11px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card--usabilidad:hover{
+    width: 270px;
+    height: 380px;
+    transition: 0.3em;
+}
+
+.img--usabilidad{
+    position: absolute;
+    top: 20px;
+    left: 42px;
+    width: 65%;
+    height: 66%;
+    border-radius: 10px;
+}
+
+.p_usabilidad{
+    position: absolute;
+    padding: 5px 5px;
+    color: #fff;
+    top: 260px;
+    left: 10px;
+    font-size: 14px;
+}
+
+/*FIN DEL SECTION*/
+
+/*FOOTER*/
+
+.footer--container{
+    position: absolute;
+    padding: 10px 10px;
+    top: 1200px;
+}
+
+.footer_hr{
+  position: absolute;
+  height: 2px;
+  width: 1300px;
+  background-color: red;
+}
+
+/*FOOTER INFO*/
+.footer--info{
+    position: relative;
+    padding: 10px 10px;
+    left: 325px;
+}
+
+.footer_h5{
+    position: relative;
+    left: -5px;
+    padding: 5px 5px;
+}
+
+.footer--p{
+    position: relative;
+    left: 0px;
+    font-size: 12px;
+}
+/*FIN FOOTER INFO*/
+
+/*FOOTER SOC*/
+.footer--soc{
+    position: absolute;
+    top: 20px;
+    left: 625px;
+}
+
+.logo--ig{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+
+}
+/*FIN FOOTER SOC*/
+
+/*FOOTER CONTACT*/
+.footer--contact{
+    position: absolute;
+    padding: 5px;
+    left: 1000px;
+}
+
+.contact_a{
+    position: absolute;
+    padding: 5px 5px;
+    top: -65px;
+    left: -175px;
+}
+
+.contact_img{
+    position: absolute;
+    width: 160px;
+    height: 80px;
+}
+/*FIN FOOTER CONTACT*/
+
+/*FOOTER COPY*/
+.footer--copy{
+    position: relative;
+    padding: 10px 10px;
+    top: 20px;
+    left: 535px;
+}
+
+.copy_p{
+    position: relative;
+    font-size: 10px;
+}
+
+/*FIN FOOTER COPY*/
+
+
+
+/*FIN DEL FOOTER*/
