@@ -51,9 +51,7 @@ main{
     align-items: center;
 }
 
-
-
-.config-nombre{
+.main-config{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,11 +61,19 @@ main{
     background-color: aliceblue;
 }
 
+.main-name{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
 .main-tittle{
-    display: block;
-    padding: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
+    padding: 30px;
     font-size: 25px;
-    text-align: start;
 }
 
 form{
@@ -85,8 +91,8 @@ form{
 
 .btn-name{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    align-self: center;
     border: 2px solid black;
     font-size: 14px;
     background: transparent;
@@ -97,6 +103,12 @@ form{
     transition: .2s all ease;
     padding: 10px 10px;
     margin: 25px;
+}
+
+.main-idioma{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 label{
@@ -131,16 +143,16 @@ select:focus{
 }
 
 .nav-main{
-    max-width: 30vh;
-    min-height: 2   0vh;
+    width: 30vh;
+    height: 20vh;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
 }
 
 .footer-main{
-    height: 40vh;
+    height: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
