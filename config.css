@@ -45,12 +45,11 @@
 
 main{
     width: 100%;
-    min-height: 50vh;
+    height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 40%;
+    display: flex;
 }
 
 
@@ -134,7 +133,7 @@ select:focus{
 
 .nav-main{
     max-width: 30vh;
-    min-height: 2   0vh;
+    min-height: 20vh;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -145,10 +144,20 @@ select:focus{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 1000px;
     width: 100%;
-    min-height: 40vh;
+    height: 30%;
     background-color: black;
 }
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .logo--ig{
     width: 50px;
