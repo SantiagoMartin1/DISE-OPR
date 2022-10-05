@@ -40,21 +40,25 @@
         <main>
             <div class="main-config">
                 <div class="main-name">
-                    <h3 class="main-tittle">$usu_login</h3>
                     <form action="post">
-                        <input type="text" class="txt-name">
-                        <input type="submit" value="Cambiar nombre" class="btn-name">
+                        <div class="name-chg">
+                            <h3 class="main-tittle">$usu_login</h3>
+                            <input type="text" class="txt-name">
+                        </div>
+                        <div class="sbmt-div">
+                            <input type="submit" value="Cambiar nombre" class="btn-name">
+                        </div>
                     </form>
-                </div>
-                <div class="main-idioma">
-                    <form action="post">
-                        <label for="Idiomas">Cambiar Idioma: </label>
-                        <select name="Idiomas" class="Idioma">
-                            <option value="Ingles">Ingles</option>
-                            <option value="Esnpaniol">Español</option>
-                        </select>
-                        <input type="submit" value="Guardar cambios" class="btn-idiomas">
-                    </form>
+                    <div class="main-idioma">
+                        <form action="post">
+                            <label for="Idiomas">Cambiar Idioma: </label>
+                            <select name="Idiomas" class="Idioma">
+                                <option value="Ingles">Ingles</option>
+                                <option value="Esnpaniol">Español</option>
+                            </select>
+                            <input type="submit" value="Guardar cambios" class="btn-idiomas">
+                        </form>
+                    </div>
                 </div>
             </div>
     </main>
