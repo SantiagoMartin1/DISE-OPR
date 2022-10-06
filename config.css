@@ -104,7 +104,7 @@ main{
     justify-content: center;
     align-items: center;
     align-content: center;
-    flex-direction: row;
+    flex-direction: column;
     width: 50vh;
     height: 50vh;
     background-color: rgba(192, 156, 255, 0.5);
@@ -116,42 +116,127 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    align-self: flex-start;
+    align-self: center;
     flex-direction: column;
-    margin: 6vh;
 }
 
-
-label{
-    padding: 30px;
-}
-
-select{
-    background-color: transparent;
-    border: none;
-    padding: 5px 5px;
-    font-size: 15px;
-}
-
-select:focus{ 
-    outline: none;
-}
-
-.btn-idiomas{
+.name-chg{
     display: flex;
-    align-items: center;
     justify-content: center;
-    border: 2px solid black;
-    font-size: 14px;
+    align-items: center;
+    align-self: center;
+    flex-direction: row;
+    gap: 5vh;
+    margin: 5vh;
+}
+
+.main-tittle{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: center;
+    font-size: 2.5vh;
+}
+
+.txt-name{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-self: center;
+    border-radius: .2vh;
+    padding: .3vh;
+}
+
+.sbmt-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+
+.btn-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border: .2vh solid black;
+    font-size: 1.4vh;
     background: transparent;
     font-weight: 600;
     cursor: pointer;
     color: black;
     outline: none;
     transition: .2s all ease;
-    padding: 10px 10px;
-    margin: 25px;
+    padding: 1vh 1vh;
 }
+
+.main-idioma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    margin: 6vh;
+}
+
+.form-idioma{
+    display: flex;
+    flex-direction: column;
+    gap: 3.5vh;
+}
+
+.idioma-chg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-direction: row;
+    gap: 5vh;
+    margin: 1vh;
+}
+
+
+label{
+    display: flex;
+    font-size: 1.9vh;
+}
+
+select{
+    display: flex;
+    background-color: transparent;
+    border: none;
+    font-size: 1.7vh;
+}
+
+select:focus{ 
+    outline: none;
+}
+
+.idioma-sbmt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.btn-idiomas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border: .2vh solid black;
+    font-size: 1.4vh;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+    outline: none;
+    transition: .2s all ease;
+    padding: 1vh 1vh; 
+    margin: 1vh;
+}
+
+
 
 
 
