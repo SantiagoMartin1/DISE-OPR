@@ -10,37 +10,58 @@
     width: 100%;
     height: 65px;
     position: fixed;
-    display: inline-block;
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 190vh;
     background-color: rgba(0, 183, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
-    padding: 0;
 }
  
 .header-lnks{
-    display: inline-block;
+    display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
-    padding: 5px;
-    margin-left: 1200px;
-    margin-top: -15px;
+    align-items: center;
+    align-self: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: .5vh 1.5vh;
 }
+
+.caja--logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+.img-logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+     align-self: flex-start;
+}
+
  
-.header--logo{
-    margin-left: -30px;
+
+.header--usu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: center;
 }
 
 .user-logo{
-    position: absolute;
+    display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px 5px;
     width: 40px;
     height: 50px;
-    margin-top: -12px;
-    margin-left: -12px;
 }
 
 .container-todo{
@@ -71,6 +92,10 @@
     align-items: center;
     align-self: center;
     flex-direction: column;
+    padding: 5vh 3vh;
+    border: .4vh solid rgba(192, 156, 255, 0.5);
+    border-radius: .5vh;
+    gap: 2vh;
 }
 
 .nav--menu{
@@ -96,21 +121,34 @@
     align-items: center;
     text-align: center;
     font-size: 2.5vh;
-}
-
-.nav-hr{
-    display: flex;
-    justify-content: flex-end;
-    align-content: center;
-    align-self: center;
-    flex-direction: row;
-    margin: 5vh;
-}
-
-.nav-vl{
-    display: flex;
     color: black;
-    height: 50vh;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    background-image: linear-gradient(180deg, 
+    rgba(0, 183, 255, 0.5),
+    rgba(192, 156, 255, 0.5)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+}
+
+#nav-a:hover{
+    background-color: rgba(192, 156, 255, 0.5);
+}
+
+.nav-hover{
+    display: flex;
+    justify-content: center;
+    padding: 1vh 5vh;
+    width: 35vh;
+    border-radius: .5vh;
+}
+
+.nav-hover:hover{
+    transition: .2s all ease;
+    background: rgba(192, 156, 255, 0.5);
+    color: black;
 }
 
 .nav-nav{
@@ -123,7 +161,7 @@
 
 
 main{
-    width: 100%;
+    width: 75%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -138,8 +176,8 @@ main{
     align-items: center;
     align-content: center;
     flex-direction: column;
-    width: 50vh;
-    height: 50vh;
+    width: 60vh;
+    height: 60vh;
     background-color: rgba(192, 156, 255, 0.5);
     border-radius: 5px;
     padding: 20px;
@@ -148,7 +186,7 @@ main{
 .main-name{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     align-self: center;
     flex-direction: column;
 }
@@ -168,7 +206,7 @@ main{
     justify-content: flex-start;
     align-items: center;
     align-self: center;
-    font-size: 2.5vh;
+    font-size: 3.5vh;
 }
 
 .txt-name{
@@ -176,8 +214,8 @@ main{
     justify-content: flex-end;
     align-items: center;
     align-self: center;
-    border-radius: .2vh;
-    padding: .3vh;
+    border-radius: .5vh;
+    padding: .5vh;
 }
 
 .sbmt-div{
@@ -193,7 +231,8 @@ main{
     align-items: center;
     align-self: center;
     border: .2vh solid black;
-    font-size: 1.4vh;
+    border-radius: .3vh;
+    font-size: 2vh;
     background: transparent;
     font-weight: 600;
     cursor: pointer;
@@ -224,21 +263,20 @@ main{
     align-items: center;
     align-self: center;
     flex-direction: row;
-    gap: 5vh;
+    gap: 4.5vh;
     margin: 1vh;
 }
 
-
 label{
     display: flex;
-    font-size: 1.9vh;
+    font-size: 2.5vh;
 }
 
 select{
     display: flex;
     background-color: transparent;
     border: none;
-    font-size: 1.7vh;
+    font-size: 2.25vh;
 }
 
 select:focus{ 
@@ -258,7 +296,8 @@ select:focus{
     align-items: center;
     align-self: center;
     border: .2vh solid black;
-    font-size: 1.4vh;
+    border-radius: .3vh;
+    font-size: 2vh;
     background: transparent;
     font-weight: 600;
     cursor: pointer;
@@ -270,6 +309,81 @@ select:focus{
 }
 
 
+.footer-main{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+}
 
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin: 5px;
+    height: 2vh;
+    width: 20%;
+    gap: 4vh;
+}
+
+.footer_hr{
+    position: absolute;
+    align-self: flex-start;
+    color: #fff;
+    width: 100vh;
+}
+
+.footer-lnks1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.footer--info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: flex-start;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.footer_h5{
+    display: flex;
+    font-size: 15px;
+    color: #fff;
+}
+
+.footer_p{
+    display: flex;
+    text-align: justify;
+    font-size: 10px;
+    color: #fff;
+}
+
+.footer-lnks2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-self: flex-start;
+}
+
+.logo-ig{
+    width: 40px;
+    height: 40px;
+}
+
+.ort-img{
+    width: 100px;
+    height: 60px;
+}
 
 
