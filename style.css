@@ -15,65 +15,109 @@ body{
 }
 
 main{
-    width: 100%;
-    padding: 20px;
-    margin: auto;
-    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-direction: row;
+    height: 100%;
 }
 
 .contenedor__todo{
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 100vh;
+    height: 80vh;
 }
 
 .caja__trasera{
     width: 100%;
-    padding: 10px 20px;
+    height: 65vh;
+    padding: 1vh 2vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 3vh;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background-color: rgba(201, 170, 255, 0.5);
-    border-radius: 14px;
+    border-radius: 1.5vh;
 }
 
 .caja__trasera div{
-    margin: 100px 40px;
+    display: flex;
     color: white;
-    transition: all 500ms;
+    transition: all ease 500ms;
 }
 
-
-.caja__trasera div p,
-.caja__trasera button{
-    margin-top: 30px;
+.caja__trasera-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    gap: 4vh;
 }
 
-.caja__trasera div h3{
+.caja__trasera-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.caja__trasera-h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-h3{
+    display: flex;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 2.5vh;
+    text-align: center;
 }
 
-.caja__trasera div p{
-    font-size: 16px;
+.caja__trasera-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-p{
+    display: flex;
+    font-size: 2vh;
     font-weight: 300;
+    text-align: -webkit-center;
 }
 
-.caja__trasera button{
-    padding: 10px 40px;
-    border: 2px solid #fff;
-    font-size: 14px;
+.caja__trasera-button{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+.main-btn{
+    padding: 1vh 4vh;
+    border: .2vh solid #fff;
+    font-size: 2vh;
     background: transparent;
     font-weight: 600;
     cursor: pointer;
     color: white;
     outline: none;
-    transition: all 300ms;
+    transition: all ease 300ms;
 }
 
-.caja__trasera button:hover{
+.main-btn:hover{
     background: #fff;
     color: #D3CBFF;
 }
@@ -84,7 +128,7 @@ main{
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 380px;
+    max-width: 38vh;
     position: relative;
     top: -5px;
     left: 10px;
@@ -95,14 +139,14 @@ main{
 
 .contenedor__login-register form{
     width: 100%;
-    padding: 45px 20px;
+    padding: 4.5vh 2vh;
     background: white;
     position: absolute;
-    border-radius: 20px;
+    border-radius: 2vh;
 }
 
 .contenedor__login-register form h2{
-    font-size: 30px;
+    font-size: 3vh;
     text-align: center;
     margin-bottom: 20px;
     color: #D3CBFF;
@@ -111,10 +155,10 @@ main{
 .contenedor__login-register form input{
     width: 100%;
     margin-top: 20px;
-    padding: 10px;
+    padding: 1vh;
     border: none;
     background: #F2F2F2;
-    font-size: 16px;
+    font-size: 1.6vh;
     outline: none;
 }
 
@@ -142,35 +186,3 @@ main{
 }
 
 
-
-@media screen and (max-width: 850px){
-
-    main{
-        margin-top: 50px;
-    }
-
-    .caja__trasera{
-        max-width: 350px;
-        height: 300px;
-        flex-direction: column;
-        margin: auto;
-    }
-
-    .caja__trasera div{
-        margin: 0px;
-        position: absolute;
-    }
-
-
-    /*Formularios*/
-
-    .contenedor__login-register{
-        top: -10px;
-        left: -5px;
-        margin: auto;
-    }
-
-    .contenedor__login-register form{
-        position: relative;
-    }
-}

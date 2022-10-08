@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   
     const dropArea = document.querySelector(".drag-area");
-    const dragText = dropArea.querySelector("h2");
-    const button = dropArea.querySelector("button");
-    const input = dropArea.querySelector("#input--file");
+    const dragText = dropArea.querySelector("drag-h2");
+    const button = dropArea.querySelector("select-btn");
+    const input = dropArea.querySelector("#input-file");
 
     button.addEventListener("click", (e) => {
         input.click();

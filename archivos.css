@@ -11,11 +11,11 @@
     height: 65px;
     position: fixed;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 167vh;
+    gap: 190vh;
     background-color: rgba(0, 183, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
@@ -24,11 +24,11 @@
 .header-lnks{
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     align-self: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 5px 15px;
+    margin: .5vh 1.5vh;
 }
 
 .caja--logo{
@@ -36,8 +36,7 @@
     justify-content: flex-start;
     align-items: center;
     align-self: center;
-    margin: auto;
-    padding: auto;
+    flex-direction: column;
 }
 
 .img-logo{
@@ -47,16 +46,7 @@
      align-self: flex-start;
 }
 
-.btn-header{
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    align-self: center;
-    margin: 1vh;
-    font-size: 2.25vh;
-    font-weight: 400;
-    color: black;
-} 
+ 
 
 .header--usu{
     display: flex;
@@ -74,124 +64,198 @@
     height: 50px;
 }
 
-.contenedor-main{
-    width: 100%;
-    min-height: 100vh;
+.container-todo{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(246, 248, 250);
-}
-
-.caja--main{
-    display: flex;
-    width: 135vh;
-    height: 45vh;
-    background-color: rgba(192, 156, 255, 0.5);
-    padding: 10vh 10vh;
-    border-radius: 5px;
-    gap: 4vh;
-}
-
-.caja--textos{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    align-self: center;
-    flex-direction: column;
-    gap: 3vh;
-}
-
-.titulo{
-    display: flex;
-    justify-content: flex-start;
-    align-self: flex-start;
-    font-weight: 600;
-    margin: 10px;
-}
-
-.p--info{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    align-self: flex-start;
-    text-align: justify;
-    font-size: 2.25vh;
-    font-weight: 300;
-}
-
-.caja--img{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    align-self: center;
-    margin: 3.5vh;
-}
-
-.console--img{
-    width: 40vh;
-    height: 25vh;
-    border-radius: 5px;
-}
-
-.btn_Pyp{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    align-self: flex-start;
-    padding: 1.25vh 2.75vh; 
-    margin: 1vh;
-    border: .3vh solid black;
-    border-radius: .3vh;
-    font-size: 2vh;
-    background: transparent;
-    font-weight: 600;
-    cursor: pointer;
-    color: black;
-    outline: none;
-    transition: .2s all ease;
-}
-
-.btn_Pyp:hover{
-    background: #fff;
-    color: black;
-}
-
-.section-main {
-    min-height: 100vh; /* poniendo un minimo de altura */
-    display: flex; 
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
-    background-color: #fff;
 }
-.card {
+
+.div-espacio{
+    display: flex;
+    width: 20vh;
+}
+
+.nav-main{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    width: 200px;
-    margin: 65px;
-    background-color: black;
-    color: white;
-    border-radius: 3px;
-    padding: 20px;
-    transition: .2s all ease;
-}
-.card-img {
-    width: 130px;
-    height: 240px;
-    border-radius: 3px;
+    align-self: center;
+    flex-direction: row;
+    width: 10vh;
+    height: 20vh;
 }
 
-.card:hover {
-    transform: scale(1.1);
+.nav-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    padding: 5vh 2vh;
+    border: .4vh solid rgba(192, 156, 255, 0.5);
+    border-radius: 1vh;
+    gap: 2vh;
 }
-.card-texto {
+
+.nav--menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+#nav-lnks{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+
+#nav-a{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5vh;
+    color: black;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    background-image: linear-gradient(180deg, 
+    rgba(0, 183, 255, 0.5),
+    rgba(192, 156, 255, 0.5)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
     text-align: center;
 }
-.footer-main{
+
+#nav-a:hover{
+    background-color: rgba(192, 156, 255, 0.5);
+}
+
+.nav-hover{
+    display: flex;
+    justify-content: center;
+    padding: 1vh 5vh;
+    width: 35vh;
+    border-radius: .5vh;
+}
+
+.nav-hover:hover{
+    transition: .2s all ease;
+    background: rgba(192, 156, 255, 0.5);
+    color: black;
+}
+
+.nav-nav{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+main{
+    width: 75%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-direction: row;
+}
+
+.drag-area{
+    border: .5vh dashed #ddd;
+    width:  40vh;
+    height: 60vh;
+    border-radius: .5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10vh;
+  }
+
+  .drag-area.active{
+      background-color: #b8d4fe;
+      color: black;
+      border: .2vh dashed #618ac9;
+  }
+
+  .drag-titulo{
+     display: flex;
+  }
+
+  .drag-h2{
+    display: flex;
+    font-size: 3.75vh;
+    font-weight: 500;
+    text-align: center;
+    color: #000;
+  }
+
+  .drag-span{
+    display: flex;
+  }
+
+  .drag-0{
+      display: flex;
+      font-size: 3vh;
+      color: #000;
+  }
+
+  .drag-btn{
+    display: flex;
+  }
+
+  .select-btn{
+      padding: 1.75vh 3.5vh;
+      font-size: 2.25vh;
+      border: 0;
+      outline: none;
+      background-color: #5256ad;
+      color: white;
+      border-radius: .5vh;
+      cursor: pointer;
+      margin: .2vh;
+  }
+  
+  .select-btn:hover{
+    background-color: rgba(139, 73, 254, 0.5);
+  }
+
+
+  .file-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: solid 1px #ddd;
+}
+
+#preview {
+    margin-top: 10px;
+}
+
+.status-text {
+    padding: 0 10px;
+}
+
+.success{
+    color: #52ad5a;
+}
+
+.failure{
+    color: #ff0000;
+}
+
+  .footer-main{
     height: 15vh;
     display: flex;
     justify-content: center;
@@ -267,6 +331,3 @@
     width: 100px;
     height: 60px;
 }
-
-
-

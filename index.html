@@ -8,21 +8,30 @@
 
 </head>
 <body>
-
     <main>
-
         <div class="contenedor__todo">
-
             <div class="caja__trasera">
                 <div class="caja__trasera-login">
-                    <h3>¿Ya tenes una cuenta?</h3>
-                    <p>Inicia sesión para entrar en la página</p>
-                    <button id="btn__iniciar-sesion">Iniciar Sesion</button>  
+                    <div class="caja__trasera-h3">
+                        <h3 class="main-h3">¿Ya tenes una cuenta?</h3>
+                    </div>
+                    <div class="caja__trasera-p">
+                        <p class="main-p">Inicia sesión para entrar en la página</p>
+                    </div>
+                    <div class="caja__trasera-btn">
+                        <button class="main-btn">Iniciar Sesion</button>  
+                    </div>
                 </div>
                 <div class="caja__trasera-register">
-                    <h3>¿Todavía no tenes cuenta?</h3>
-                    <p>Registrate para que puedas iniciar sesión</p>
-                    <button id="btn__registrarse"></button>>Registrarse</button>
+                    <div class="caja__trasera-h3">
+                        <h3 class="main-h3">¿Todavía no tenes cuenta?</h3>
+                    </div>
+                    <div class="caja__trasera-p">
+                        <p class="main-p">Registrate para que puedas iniciar sesión</p>
+                    </div>
+                    <div class="caja__trasera-btn">
+                        <button class="main-btn">Registrarse</button>      
+                    </div>
                 </div>
                 <!-- formulario de login y register-->
                 <div class="contenedor__login-register">
@@ -31,7 +40,7 @@
                         <h2>Iniciar Sesión</h2>
                         <input  name="Mail_Login" type="email" placeholder="Correo Electronico">
                         <input name="Pass_Login" type="password" placeholder="Contraseña">
-                        <button type="submit" onclick="myFunction()"></button>>Entrar</button>
+                        <button type="submit" onclick="myFunction()">Entrar</button>
                     </form>
                     <!--Register-->
                     <form action="" method="post" class="formulario__register">
@@ -39,14 +48,11 @@
                         <input type="text" placeholder="Correo Electronico">
                         <input name="Usu_Register" type="text" placeholder="Usuario">
                         <input name= "Pass_Register" type="Pass_Register" placeholder="Contraseña">
-                        <button name="btnregister" type="submit" onclick="myFunction()"></button>>Registrarse</button>
+                        <button name="btnregister" type="submit" onclick="myFunction()">Registrarse</button>
                     </form>
                 </div>
-
             </div>
-
         </div>
-        
     </main>
     <script src="index.js"></script>
 </body>
