@@ -16,7 +16,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 190vh;
-    background-color: rgba(0, 183, 255, 0.5);
+    background-color: #00b7ff80;
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
 }
@@ -43,7 +43,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
-     align-self: flex-start;
+    align-self: flex-start;
 }
 
  
@@ -162,7 +162,7 @@
 
 main{
     width: 75%;
-    height: 100vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -328,7 +328,7 @@ select:focus{
 
 
 .footer-main{
-    height: 15vh;
+    height: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
