@@ -55,7 +55,8 @@ if(isset($_POST["btnregister"]))
     }
 }
 
- 
+session_start();
+$_SESSION["newsession"]=$usu_login;
 
 
 

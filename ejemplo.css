@@ -11,11 +11,10 @@
     height: 65px;
     position: fixed;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 167vh;
     background-color: rgba(0, 183, 255, 0.502);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);

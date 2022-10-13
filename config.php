@@ -45,8 +45,13 @@
                 <div class="main-name">
                     <form action="post">
                         <div class="name-chg">
-                            <h3 class="main-tittle">$usu_login</h3>
-                            <input type="text" class="txt-name">
+                            <h3 id="main-tittle">
+                                <?php
+                                 session_start();   
+                                echo $_SESSION["newsession"];
+                                ?>
+                            </h3>
+                            <input type="text" id="txt-name">
                         </div>
                         <div class="sbmt-div">
                             <input type="submit" value="Cambiar nombre" class="btn-name">
@@ -98,6 +103,6 @@
                 </div>
             </div>          
         </footer>
-    
+    <script src="config.js"></script>
 </body>
 </html>
