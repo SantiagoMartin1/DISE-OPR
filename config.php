@@ -22,6 +22,7 @@
         </div>
     </header>
     <div class="container-todo">
+        <div class="child-container-todo">
         <nav class="nav-main">
             <div class="nav-nav">
                 <ul class="nav--menu">
@@ -51,7 +52,8 @@
                                 echo $_SESSION["newsession"];
                                 ?>
                             </h3>
-                            <input type="text" id="txt-name">
+                            <input type="text" id="txt-name" required
+                             minlength="4" maxlength="8" size="10">
                         </div>
                         <div class="sbmt-div">
                             <input type="submit" value="Cambiar nombre" class="btn-name">
@@ -79,6 +81,7 @@
                 </div>
             </div>
     </main>
+        </div> 
     </div>
     
     
