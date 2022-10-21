@@ -105,7 +105,7 @@ main{
 
 
 
-.main-btn{
+#main-btn{
     padding: 1vh 4vh;
     border: .2vh solid #fff;
     font-size: 2vh;
@@ -117,7 +117,7 @@ main{
     transition: all ease 300ms;
 }
 
-.main-btn:hover{
+#main-btn:hover{
     background: #fff;
     color: #D3CBFF;
 }
@@ -178,11 +178,12 @@ main{
 
 
 .formulario__login{
-    opacity: 1;
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 .formulario__register{
-    display: none;
+    display: flex;
+    flex-direction: column;
 }
 
 
