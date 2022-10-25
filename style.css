@@ -177,7 +177,7 @@ main{
 
 
 
-.formulario__login{
+#formulario__login{
     display: flex;
     flex-direction: column;
 }
