@@ -5,8 +5,6 @@
 include_once("./conexion.php");
 
 
-
-
 $usu_login =  $_POST ["usu_login"];
 $pass_login = $_POST ["pass_login"];
 
@@ -24,7 +22,7 @@ $pass_register = $POST ["pass_register"];
 
 
 
-if(isset($_POST["btnsubmit"]))
+if(isset($_POST["btn-primary-login"]))
 {
     $query = mysqliquery($conn,"SELECT * FROM Usuario = '$usu_login' AND Passenia = '$pass_login'");
     $row = mysqli_num_rows($query);
@@ -41,7 +39,7 @@ if(isset($_POST["btnsubmit"]))
 
 }
 
-if(isset($_POST["btnregister"]))
+if(isset($_POST["btn-primary-register"]))
 {
     $query2 = "INSERT INTO usuario (Usuario,Passenia) values ('$Usu_Register' , '$Pass_Register')";
 
