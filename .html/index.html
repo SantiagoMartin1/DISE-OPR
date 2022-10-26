@@ -44,8 +44,8 @@
                     <!--Login-->
                     <form action="../.php/Handler.php" method="post" class="formulario__login">
                         <h2>Iniciar Sesión</h2>
-                        <input type="email" placeholder="Correo Electronico">
-                        <input type="password" placeholder="Contraseña">
+                        <input  name = "email_login" type="email" placeholder="Correo Electronico">
+                        <input name = "pass_login" type="password" placeholder="Contraseña">
                         <button id="btn-primary-login">Entrar</button>
                         <div class="caja__contrasenia">
                             <label for="contraseña">Olvidaste tu contraseña?</label>
@@ -56,11 +56,11 @@
                     <!--Register-->
                     <form action="../.php/Handler.php" method="post" class="formulario__register">
                         <h2>Regístrarse</h2>
-                        <input type="text" placeholder="Nombre completo" id="Nombre" name="nombre">
-                        <input type="email" placeholder="Correo Electronico" id="exampleInputEmail1" name="email">
-                        <input type="text" placeholder="Usuario" id="#" name="#">
-                        <input type="password" placeholder="Contraseña" id="exampleInputPassword1" name="pass">
-                        <input type="password" placeholder="Confirmar Contraseña" id="exampleInputPassword2" name="pass2">
+                        <input type="text" placeholder="Nombre completo" id="Nombre" name="nombre_register">
+                        <input type="email" placeholder="Correo Electronico" id="exampleInputEmail1" name="email_register">
+                        <input type="text" placeholder="Usuario" id="#" name="user_register">
+                        <input type="password" placeholder="Contraseña" id="exampleInputPassword1" name="pass_register">
+                        <input type="password" placeholder="Confirmar Contraseña" id="exampleInputPassword2" name="pass2_register">
                         <button id="btn-primary-register">Regístrarse</button>
                     </form>
                 </div>
