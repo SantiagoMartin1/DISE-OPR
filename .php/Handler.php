@@ -2,7 +2,7 @@
 
 
 
-include_once("./conexion.php");
+include_once("conexion.php");
 
 
 $usu_login =  $_POST ["usu_login"];

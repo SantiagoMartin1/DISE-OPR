@@ -3,7 +3,7 @@ if( isset($_GET['email'])  && isset($_GET['token']) ){
     $email=$_GET['email'];
     $token=$_GET['token'];
 }else{
-    header("Location: ./index.html");
+    header("Location: ../.html/index.html");
 }
 
 ?>
