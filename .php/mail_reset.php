@@ -15,7 +15,7 @@ $mensaje = '
   <title>Restablecer</title>
 </head>
 <body>
-    <h1>Nombre de la empresa</h1>
+    <h1>Perfect Pitch</h1>
     <div style="text-align:center; background-color:#ccc">
         <p>Restablecer contraseña</p>
         <h3>'.$codigo.'</h3>
