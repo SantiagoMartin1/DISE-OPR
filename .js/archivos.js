@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
       function processFile(file) {
         const docType = file.type;
-        const validExtensions = ['audio/mp3', 'audio/mp4', 'audio/wav', 'audio/midi', 'audio/flac', 'audio/alac'];
+        const validExtensions = ['audio/.mp3', 'audio/.wav'];
       
         if (validExtensions.includes(docType)) {
           // archivo válido

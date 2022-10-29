@@ -25,7 +25,7 @@ $pass2_register = $POST ["pass2_register"];
 
 
 
-if(isset($_POST["btnsubmit"]))
+if(isset($_POST["btn-primary-login"]))
 {
     $query = mysqliquery($conn,"SELECT * FROM Usuario = '$usu_login' AND Passenia = '$pass_login'");
     $row = mysqli_num_rows($query);
@@ -42,7 +42,7 @@ if(isset($_POST["btnsubmit"]))
 
 }
 
-if(isset($_POST["btnregister"]))
+if(isset($_POST["btn-primary-register"]))
 {
     $query2 = "INSERT INTO usuario (Username,Passenia,correo_electronico) values ()";
 
