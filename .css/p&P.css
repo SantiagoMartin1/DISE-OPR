@@ -88,6 +88,12 @@
     background-color: #ddd;
   }
   
+  .user-icon{
+    display: flex;
+    width: 25px;
+    height: 25px;
+  }
+
   .show {
     display: block;
   }

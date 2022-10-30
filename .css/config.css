@@ -239,7 +239,7 @@ main{
     justify-content: flex-start;
     align-items: center;
     align-self: center;
-    font-size: 3.5vh;
+    font-size: 35px;
 }
 
 #txt-name{
@@ -247,8 +247,12 @@ main{
     justify-content: flex-end;
     align-items: center;
     align-self: center;
-    border-radius: .5vh;
-    padding: .5vh;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
 }
 
 .sbmt-div{
@@ -263,16 +267,21 @@ main{
     justify-content: center;
     align-items: center;
     align-self: center;
-    border: .2vh solid black;
-    border-radius: .3vh;
-    font-size: 1.5vh;
-    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    font-size: 14px;
+    background: #8c49ff80;
     font-weight: 600;
     cursor: pointer;
-    color: black;
+    color: #fff;
     outline: none;
     transition: .2s all ease;
-    padding: 1vh 1vh;
+    padding: 10px 20px;  
+    margin: 10px;
+}
+
+.btn-name:hover{
+    background: #b084fc80;
 }
 
 .main-idioma{
@@ -302,14 +311,14 @@ main{
 
 label{
     display: flex;
-    font-size: 2vh;
+    font-size: 20px;
 }
 
 select{
     display: flex;
     background-color: transparent;
     border: none;
-    font-size: 1.5vh;
+    font-size: 16px;
 }
 
 select:focus{ 
@@ -328,17 +337,21 @@ select:focus{
     justify-content: center;
     align-items: center;
     align-self: center;
-    border: .2vh solid black;
-    border-radius: .3vh;
-    font-size: 1.5vh;
-    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    font-size: 14px;
+    background: #8c49ff80;
     font-weight: 600;
     cursor: pointer;
-    color: black;
+    color: #fff;
     outline: none;
     transition: .2s all ease;
-    padding: 1vh 1vh; 
-    margin: 1vh;
+    padding: 10px 20px;  
+    margin: 10px;
+}
+
+.btn-idiomas:hover{
+    background: #b084fc80;
 }
 
 .main-pswrd{
