@@ -1,11 +1,8 @@
 <?php
 
-
+echo "hola mundo";
 
 include_once("./conexion.php");
-
-
-
 
 $mail_login =  $_POST ["email_login"];
 $pass_login = $_POST ["pass_login"];
@@ -18,21 +15,14 @@ $pass2_register = $POST ["pass2_register"];
 
 
 
-
-
-
-
-
-
-
 if(isset($_POST["btn-primary-login"]))
 {
-    $query = mysqliquery($conn,"SELECT * FROM Usuario = '$usu_login' AND Passenia = '$pass_login'");
+    $query = mysqli_query($conn,"SELECT * FROM Usuario = '".$usu_login."' AND Passenia = '".$pass_login."'");
     $row = mysqli_num_rows($query);
 
     if($row == 1)
     {
-        echo "<script> alert ('Bienvenido, $usu_login'); window.location = 'principal.html' </script>";
+        echo "<script> alert ('Bienvenido,".$usu_login."'); window.location = 'principal.html' </script>";
     }
     else
     {
@@ -44,17 +34,29 @@ if(isset($_POST["btn-primary-login"]))
 
 if(isset($_POST["btn-primary-register"]))
 {
-    $query2 = "INSERT INTO usuario (Username,Passenia,correo_electronico) values ()";
-
-    if(mysqli_query($conn,$query2))
+    if($pass_register == $pass2_register)
     {
-        echo "<script> alert ('Usuario registrado con exito: $Usu_Register'); window.location = 'index.html' </script>";
+        
+            $query2 = "INSERT INTO usuario (Username,Passenia,correo_electronico,Nombre_completo) values ('".$usuario_register."','".$pass_register."','".$mail_register."','".$name_register."')";
+        
+            if(mysqli_query($conn,$query2))
+            {
+                echo "<script> alert ('Usuario registrado con exito:".$usuario_register."'); window.location = 'index.html' </script>";
+            }
+            else
+            {
+                echo "Error:".$query2."<br>".mysql_error($conn);
+            }
+        
+
     }
     else
     {
-        echo "Error:".$query2."<br>".mysql_error($conn);
+        echo "<script> alert ('Las contraseñas no coinciden. Constatesé que sean iguales.'); window.location = 'index.html' </script>";
     }
+
 }
+
 
  
 
