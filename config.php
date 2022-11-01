@@ -1,12 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subir archivos</title>
-    <link rel="stylesheet" type="text/css" href="archivos.css">
-
+    <title>My account</title>
+    <link rel="stylesheet" type="text/css" href="config.css">
 </head>
 <body>
     <header>
@@ -22,17 +22,18 @@
         </div>
     </header>
     <div class="container-todo">
+        <div class="child-container-todo">
         <nav class="nav-main">
             <div class="nav-nav">
                 <ul class="nav--menu">
                     <div class="nav-hover">
-                        <li id="nav-lnks"><a id="nav-a" href="config.html">Configuración</a></li>
+                        <li id="nav-lnks"><a id="nav-a" href="#"><img src="#" alt="#"></a></li>
                     </div>
                     <div class="nav-hover">
-                        <li id="nav-lnks"><a id="nav-a" href="archivos.html">Mis archivos</a></li>
+                        <li id="nav-lnks"><a id="nav-a" href="#">Mis archivos</a></li>
                     </div>
                     <div class="nav-hover">
-                        <li id="nav-lnks"><a id="nav-a" href="account.html">Subir archivos</a></li>
+                        <li id="nav-lnks"><a id="nav-a" href="archivos.html">Subir archivos</a></li>
                     </div>
                     <div class="nav-hover">
                         <li id="nav-lnks"><a id="nav-a" href="#">Cambiar contraseña</a></li>
@@ -41,23 +42,46 @@
             </div>
         </nav>
         <main>
-            <div class = "drag-area">
-                <div class="drag-titulo">
-                    <h2 class="drag-h2">Arrastra y suelta archivos</h2>
+            <div class="main-config">
+                <div class="main-name">
+                    <form action="post">
+                        <div class="name-chg">
+                            <h3 id="main-tittle">
+                                <?php
+                                 session_start();   
+                                echo $_SESSION["newsession"];
+                                ?>
+                            </h3>
+                            <input type="text" id="txt-name" required
+                             minlength="4" maxlength="8" size="10">
+                        </div>
+                        <div class="sbmt-div">
+                            <input type="submit" value="Cambiar nombre" class="btn-name">
+                        </div>
+                    </form>                  
                 </div>
-                <div class="drag-span">
-                    <span class="drag-0">0</span>
+                <div class="main-idioma">
+                    <div class="form-idioma">
+                        <form action="post" class="form-idioma">
+                            <div class="idioma-chg">
+                                <label for="Idiomas">Cambiar Idioma: </label>
+                                <select name="Idiomas" class="Idioma">
+                                    <option value="Ingles">Ingles</option>
+                                    <option value="Esnpaniol">Español</option>
+                                </select>    
+                            </div>
+                            <div class="idioma-sbmt">
+                                <input type="submit" value="Guardar cambios" class="btn-idiomas">
+                            </div>
+                            </form>
+                    </div>
                 </div>
-                <div class="drag-btn">
-                    <button class="select-btn">Selecciona tus archivos</button>
+                <div class="main-pswrd">
+                    <a href="#" class="fgt-pswrd">Olvide mi contraseña</a>
                 </div>
-                <input type="file" name="" id="input-file" hidden multiple accept=".mp3/.wav"/>
             </div>
-            
-            <script src="publishGame.js"></script>
-        
-            <div id="preview"></div>        
-        </main>
+    </main>
+        </div> 
     </div>
     
     
@@ -82,7 +106,6 @@
                 </div>
             </div>          
         </footer>
-    
-    <script src="archivos.js"></script>
+    <script src="config.js"></script>
 </body>
 </html>

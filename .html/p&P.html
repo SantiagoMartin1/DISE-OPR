@@ -29,10 +29,6 @@
     </header>
     <main>
     <!--
-
-        preguntarle a nacho o a alguien
-        como hacer para que el drag n drop solo me acepte .wav y .mp3
-        
         ademas
 
         pedir ayuda con el boton de transformada (que hacer?)
@@ -50,12 +46,15 @@
         y menos importante pero que estaría bueno
 
         el header de principal hacer que sea con scroll (pedir ayuda xq probe un codigo de google pero no funciono)
-    -->
+        -->
+        
         <div class="container-pyP">
-            <article class="dropZone">
-                <p class="p_interno">Arrastra y suelta tus archivos aquí</p>
-            </article>    
-            <button id="btn-transformar">Trasformar</button>
+            <form onsubmit="return Validate(this);" method="post" action="#">
+                <div class="dropZone">
+                <input type="file" name="my file" accept=".mp3 , .wav" /><br />
+                <input type="submit" value="Submit" onclick="Validate()" class="submit"/>
+                </div>
+              </form>
         </div>
     </main>
     <footer class="footer-main">
