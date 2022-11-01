@@ -2,7 +2,7 @@
 
 include_once("./conexion.php");
 
-$mail_login =  $_POST ["email_login"];
+
 $pass_login = $_POST ["pass_login"];
 
 $name_register = $_POST ["nombre_register"];
@@ -10,13 +10,14 @@ $mail_register = $_POST ["email_register"];
 $usuario_register = $_POST ["user_register"];
 $pass_register = $_POST ["pass_register"];
 $pass2_register = $_POST ["pass2_register"];
+$mail_login =  $mail_register;
 
 //echo "INSERT INTO usuario (Username,Passenia,correo_electronico,Nombre_completo) values ('".$usuario_register."','".$pass_register."','".$mail_register."','".$name_register."')";
 
 
 if(isset($_POST['btn-primary-login']))
 {
-    $query = mysqli_query($conn,"SELECT * FROM Usuario = '".$usu_login."' AND Passenia = '".$pass_login."'");
+    $query = mysqli_query($conn,"SELECT * FROM Usuario WHERE  = '".$mail_login."' AND Passenia = '".$pass_login."'");
     
     $row = mysqli_num_rows($query);
 
