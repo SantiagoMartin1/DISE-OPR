@@ -10,10 +10,10 @@ $mail_register = $_POST ["email_register"];
 $usuario_register = $_POST ["user_register"];
 $pass_register = $_POST ["pass_register"];
 $pass2_register = $_POST ["pass2_register"];
-$mail_login =  $mail_register;
+$mail_login = $_POST ["email_login"];
 
 //echo "INSERT INTO usuario (Username,Passenia,correo_electronico,Nombre_completo) values ('".$usuario_register."','".$pass_register."','".$mail_register."','".$name_register."')";
-
+ 
 
 if(isset($_POST['btn-primary-login']))
 {
@@ -27,7 +27,8 @@ if(isset($_POST['btn-primary-login']))
     }
     else
     {
-        echo "<script> alert ('usuario no existe'); window.location = 'index.html' </script>";    
+        echo "<script> alert ('usuario no existe'); window.location = 'index.html' </script>"; 
+           
     }
 
 
@@ -41,7 +42,7 @@ if(isset($_POST['btn-primary-register']))
     {
         
             $query2 = "INSERT INTO usuario (Username,Passenia,correo_electronico,Nombre_completo) values ('".$usuario_register."','".$pass_register."','".$mail_register."','".$name_register."')";
-        echo $query2;
+        
             if(mysqli_query($conn,$query2))
             {
                 echo "<script> alert ('Usuario registrado con exito:".$usuario_register."'); window.location = 'index.html' </script>";
