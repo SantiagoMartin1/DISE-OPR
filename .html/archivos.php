@@ -31,7 +31,7 @@
                     <li id="nav-lnks"><a id="nav-a" href="#"><img class="myFiles" src="../imgs/mis-archivos.png" alt="folder-img"></a></li>
                 </div>
                 <div class="nav-hover">
-                    <li id="nav-lnks"><a id="nav-a" href="archivos.html"><img class="upFiles" src="../imgs/subir-archivos.png" alt="subir-img"></a></li>
+                    <li id="nav-lnks"><a id="nav-a" href="archivos.html"><img class="upFiles" src="../imgs/subir.png" alt="subir-img"></a></li>
                 </div>
                 <div class="nav-hover">
                     <li id="nav-lnks"><a id="nav-a" href="#"><img class="password-img" src="../imgs/change-password.png" alt="password-img"></a></li>
@@ -41,13 +41,12 @@
     </nav>  
     <main>
         <form action="" method="get">
-
-        
+        <div class="card" id="mostrar-archivos">
+            
+        </div>
         </form>
     </main>  
     
-        <!-- fetch("http://localhost:3000/datos-del-usuario") -->
-
         <footer class="footer-main">
             <div class="footer-container">
                 <hr class="footer_hr">
