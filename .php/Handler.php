@@ -1,6 +1,6 @@
 <?php
 
-include_once("./conexion.php");
+include("./conexion.php");
 
 
 $pass_login = $_POST ["pass_login"];
@@ -18,16 +18,15 @@ $mail_login = $_POST ["email_login"];
 if(isset($_POST['btn-primary-login']))
 {
     $query = mysqli_query($conn,"SELECT * FROM Usuario WHERE  = '".$mail_login."' AND Passenia = '".$pass_login."'");
-    
     $row = mysqli_num_rows($query);
 
-    if($row == 1)
+    if($row = 1)
     {
-        echo "<script> alert ('Bienvenido,".$usu_login."'); window.location = 'principal.html' </script>";
+        echo "<script> alert ('Bienvenido,".$usu_login."'); window.location = '../.html/principal.html' </script>";
     }
     else
     {
-        echo "<script> alert ('usuario no existe'); window.location = 'index.html' </script>"; 
+        echo "<script> alert ('usuario no existe'); window.location = '../.html/index.html' </script>"; 
            
     }
 
@@ -45,7 +44,7 @@ if(isset($_POST['btn-primary-register']))
         
             if(mysqli_query($conn,$query2))
             {
-                echo "<script> alert ('Usuario registrado con exito:".$usuario_register."'); window.location = 'index.html' </script>";
+                echo "<script> alert ('Usuario registrado con exito:".$usuario_register."'); window.location = '../.html/principal.html' </script>";
             }
             else
             {
