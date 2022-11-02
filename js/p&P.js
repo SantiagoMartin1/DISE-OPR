@@ -24,3 +24,15 @@ function Validate(oForm) {
     }
     return true;
 }
+
+var fileInput = document.getElementById("fileInput")
+function showFileName (e) {
+    fileName = "";
+    path = e.target.value
+    // 11
+    for(let i = 12; i < path.length-4; i++){
+        fileName += path[i]
+    }
+    document.getElementById("filename").innerText = fileName
+}
+fileInput.addEventListener("change", showFileName)

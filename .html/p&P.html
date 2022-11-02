@@ -50,7 +50,8 @@
         <div class="container-pyP">
             <form onsubmit="return Validate(this);" method="post" action="#">
                 <div class="dropZone">
-                <input type="file" name="my file" accept=".mp3 , .wav" /><br />
+                <input type="file" name="my file" accept=".mp3 , .wav" id="fileInput" /><br />
+                <h5 id="filename"></h5>
                 <input type="submit" value="Submit" onclick="Validate()" class="submit"/>
                 </div>
               </form>
@@ -75,6 +76,6 @@
             </div>
         </div>          
     </footer>
-    <script src="../.js/p&P.js"></script>
+    <script src="../js/p&P.js"></script>
 </body>
 </html>

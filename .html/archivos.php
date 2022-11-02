@@ -54,8 +54,8 @@ include_once("../.php/conexion.php");
             <?php
                 for($i = 0; $i < count($data); $i++){
                    
-                   echo "<label for='palabra'>Palabra</label>";
-
+                    echo "<label for='palabra'>Palabra</label>";
+                    
                 }
             ?>
         </div>

@@ -49,7 +49,7 @@
                                 <h3 id="main-tittle">
                                     <?php
                                      session_start();   
-                                    echo $_SESSION["newsession"];
+                                     echo $_SESSION["newsession"];
                                     ?>
                                 </h3>
                                 <input type="text" id="txt-name" required
