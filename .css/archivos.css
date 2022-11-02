@@ -9,14 +9,13 @@
 .header--container{
     width: 100%;
     height: 65px;
-    position: fixed;
+    /*position: fixed;*/
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 190vh;
-    background-color: rgba(0, 183, 255, 0.5);
+    background-color: #00b7ff80;
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
 }
@@ -43,7 +42,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
-     align-self: flex-start;
+    align-self: flex-start;
 }
 
  
@@ -64,6 +63,8 @@
     height: 50px;
 }
 
+
+
 .container-todo{
     display: flex;
     justify-content: center;
@@ -76,26 +77,50 @@
     width: 20vh;
 }
 
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.child-container-todo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #fff;
+    box-shadow: 2px 5px 20px
+    rgba(119, 119, 119, .5);
+    height: 50vh;
+    border-radius: .5vh;
+
+}
+
 .nav-main{
     display: flex;
     justify-content: center;
     align-items: center;
     align-self: center;
     flex-direction: row;
-    width: 10vh;
+    width: 20vh;
     height: 20vh;
 }
 
 .nav-nav{
     display: flex;
     justify-content: center;
-    align-items: center;
     align-self: center;
+    align-items: center;
     flex-direction: column;
-    padding: 5vh 2vh;
-    border: .4vh solid rgba(192, 156, 255, 0.5);
-    border-radius: 1vh;
-    gap: 2vh;
+    margin-left: .5vh;
+    height: 55vh;
+    border-radius: .5vh;
+    width: 55%;
+    background: rgba(192, 156, 255, 0.85);
+    box-shadow: 3px 3px 10px rgba(119, 119 119, .5);
 }
 
 .nav--menu{
@@ -121,7 +146,7 @@
     align-items: center;
     text-align: center;
     font-size: 2.5vh;
-    color: black;
+    color: #fff;
     font-weight: 600;
     letter-spacing: -0.015em;
     background-image: linear-gradient(180deg, 
@@ -134,29 +159,40 @@
 }
 
 #nav-a:hover{
-    background-color: rgba(192, 156, 255, 0.5);
+    transform: scale(1.1);
 }
 
 .nav-hover{
     display: flex;
     justify-content: center;
-    padding: 1vh 5vh;
-    width: 35vh;
-    border-radius: .5vh;
 }
 
-.nav-hover:hover{
-    transition: .2s all ease;
-    background: rgba(192, 156, 255, 0.5);
-    color: black;
-}
-
-.nav-nav{
+.settings-img{
     display: flex;
-    justify-content: center;
-    align-self: center;
     align-items: center;
-    flex-direction: column;
+    width: 40px;
+    height: 40px;
+}
+
+.myFiles{
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.upFiles{
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.password-img{
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
 }
 
 
@@ -170,90 +206,7 @@ main{
     flex-direction: row;
 }
 
-.drag-area{
-    border: .5vh dashed #ddd;
-    width:  40vh;
-    height: 60vh;
-    border-radius: .5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10vh;
-  }
 
-  .drag-area.active{
-      background-color: #b8d4fe;
-      color: black;
-      border: .2vh dashed #618ac9;
-  }
-
-  .drag-titulo{
-     display: flex;
-  }
-
-  .drag-h2{
-    display: flex;
-    font-size: 3.75vh;
-    font-weight: 500;
-    text-align: center;
-    color: #000;
-  }
-
-  .drag-span{
-    display: flex;
-  }
-
-  .drag-0{
-      display: flex;
-      font-size: 3vh;
-      color: #000;
-  }
-
-  .drag-btn{
-    display: flex;
-  }
-
-  .select-btn{
-      padding: 1.75vh 3.5vh;
-      font-size: 2.25vh;
-      border: 0;
-      outline: none;
-      background-color: #5256ad;
-      color: white;
-      border-radius: .5vh;
-      cursor: pointer;
-      margin: .2vh;
-  }
-  
-  .select-btn:hover{
-    background-color: rgba(139, 73, 254, 0.5);
-  }
-
-
-  .file-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    border: solid 1px #ddd;
-}
-
-#preview {
-    margin-top: 10px;
-}
-
-.status-text {
-    padding: 0 10px;
-}
-
-.success{
-    color: #52ad5a;
-}
-
-.failure{
-    color: #ff0000;
-}
 
   .footer-main{
     height: 15vh;

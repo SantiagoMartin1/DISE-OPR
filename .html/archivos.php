@@ -1,3 +1,12 @@
+
+<?php
+include_once("../.php/conexion.php");
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subir archivos</title>
-    <link rel="stylesheet" type="text/css" href="archivos.css">
+    <link rel="stylesheet" type="text/css" href="../.css/archivos.css">
 
 </head>
 <body>
@@ -42,7 +51,13 @@
     <main>
         <form action="" method="get">
         <div class="card" id="mostrar-archivos">
-            
+            <?php
+                for($i = 0; $i < count($data); $i++){
+                   
+                   echo "<label for='palabra'>Palabra</label>";
+
+                }
+            ?>
         </div>
         </form>
     </main>  
@@ -51,7 +66,7 @@
             <div class="footer-container">
                 <hr class="footer_hr">
                 <div class="footer-lnks1">
-                    <a href="https://www.instagram.com/santi_.martin/"><img class="logo-ig" src="..//imgs/logo--ig.png" alt="instagram"></a>
+                    <a href="https://www.instagram.com/santi_.martin/"><img class="logo-ig" src="../imgs/logo--ig.png" alt="instagram"></a>
                 </div>
                 <div class="footer--info">
                     <div class="footer-h5">

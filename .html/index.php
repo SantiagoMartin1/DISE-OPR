@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login y Register - MagtimusPro</title>
+    <title>Login y Register</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
@@ -19,6 +19,7 @@
                     <a class="img-logo" href="principal.html"><img src="#" alt="#"></a>
                     <a href="https://www.instagram.com/santi_.martin/"><img class="logo-ig" src="../imgs/logo--ig.png" alt="instagram"></a>
                     <a class="contact_a" href="https://campus.ort.edu.ar/secundaria/belgrano/tic/2022-nr4d"><img class="ort-img" src="../imgs/logo_ort.png" alt="logo_ort"></a>
+                    <div class="card" id="mostrar-archivos">
                 </nav>
         </div>
     </header>
