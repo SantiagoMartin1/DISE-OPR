@@ -26,7 +26,7 @@ if(isset($_POST['btn-primary-login']))
     }
     else
     {
-        echo "<script> alert ('usuario no existe'); window.location = '../.html/index.html' </script>"; 
+        echo "<script> alert ('usuario no existe'); window.location = '../.html/index.php' </script>"; 
            
     }
 
@@ -55,7 +55,7 @@ if(isset($_POST['btn-primary-register']))
     }
     else
     {
-        echo "<script> alert ('Las contraseñas no coinciden. Constatesé que sean iguales.'); window.location = 'index.html' </script>";
+        echo "<script> alert ('Las contraseñas no coinciden. Constatesé que sean iguales.'); window.location = 'index.php' </script>";
     }
 
 }
