@@ -43,18 +43,19 @@
                 </div>
                 <hr class="vertical-hr">
             </div>           
-        </nav>
+l        </nav>
         <main>
             <div class="container-imgs">
                 <form action="procesar.php" enctype="multipart/form-data" method="post">
                     <label for="imagen">Imagen:</label>
-                    <input id="imagen" name="imagen" size="30" type="file" />
+                    <p><img src="#" alt="#" height="100px" width="100px"></p>
+                    <input id="imagen" name="imagen" size="30" type="file" accept=".png, .jpg"/>
                     <?php 
 
                     move_uploaded_file($_FILES['imagen']['tmp_name'],$directorio.$nombre); 
 
                      ?>
-                    <input name="submit" type="submit" value="Guardar" />
+                    <input id="btn-submit" name="submit" type="submit" value="Guardar" />
                 </form> 
                 
             </div>

@@ -88,6 +88,24 @@ main{
     width: 15rem;
 }
 
+#btn-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    font-size: 14px;
+    background: #8c49ff80;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    transition: .2s all ease;
+    padding: 10px 20px;  
+    margin: 10px;
+}
+
 .container-cambiar-nombre{
     display: flex;
     flex-direction: row;
