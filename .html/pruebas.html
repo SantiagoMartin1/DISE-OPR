@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas</title>
+
+
+    <link rel="stylesheet" href="../.css/pruebas.css">
+
+</head>
+<body>
+    <header>
+        <a href="../.html/principal.html"><img src="#" alt="logo-p&P"></a>
+        <h1>Mi Cuenta</h1>
+        <a href="../.html/principal.html"><img src="#" alt="logout">
+            <?php
+            @session_start();
+            session_destroy();
+            header("Location: index.php");
+            ?>
+        </a>
+    </header>
+    
+    
+    
+    
+    <div class="container-todo">
+        <nav>
+            <div class="between-container">
+                <div class="nav-hover">
+                    <li id="nav-lnks"><a id="nav-a" href="#"><img class="img" src="../imgs/settings_img.png" alt="settings-img"></a></li>
+                </div>
+                <div class="nav-hover">
+                    <li id="nav-lnks"><a id="nav-a" href="#"><img class="img" src="../imgs/mis-archivos.png" alt="folder-img"></a></li>
+                </div>
+                <div class="nav-hover">
+                    <li id="nav-lnks"><a id="nav-a" href="archivos.html"><img class="img" src="../imgs/subir-archivos.png" alt="subir-img"></a></li>
+                </div>
+                <div class="nav-hover">
+                    <li id="nav-lnks"><a id="nav-a" href="#"><img class="img" src="../imgs/change-password.png" alt="password-img"></a></li>
+                </div>
+                <hr class="vertical-hr">
+            </div>           
+        </nav>
+        <main>
+            <div class="container-imgs">
+                <form action="procesar.php" enctype="multipart/form-data" method="post">
+                    <label for="imagen">Imagen:</label>
+                    <input id="imagen" name="imagen" size="30" type="file" />
+                    <?php 
+
+                    move_uploaded_file($_FILES['imagen']['tmp_name'],$directorio.$nombre); 
+
+                     ?>
+                    <input name="submit" type="submit" value="Guardar" />
+                </form> 
+                
+            </div>
+            
+            <div class="container-cambiar-nombre">
+                    <form action="#" method="post">
+                        <div class="name-chg">
+                            <h3 id="main-tittle">nombre
+                                <?php
+                                 session_start();   
+                                 echo $_SESSION["newsession"];
+                                ?>
+                            </h3>
+                            <input type="text" id="txt-name" required
+                             minlength="4" maxlength="12" placeholder="Cambiar nombre">
+                        </div>
+                        
+                            <input type="submit" value="Cambiar nombre" class="btn-name">
+                    </form>
+            </div>
+        </main>
+
+        <span></span>    
+
+
+</div>
+    
+      
+    
+    <footer class="footer-main">
+        <div class="footer-container">
+            <hr class="footer_hr">
+            <div class="footer-lnks1">
+                <a href="https://www.instagram.com/santi_.martin/"><img class="logo-ig" src="..//imgs/logo--ig.png" alt="instagram"></a>
+            </div>
+            <div class="footer--info">
+                <div class="footer-h5">
+                    <h5 class="footer_h5">Sobre nosotros</h5>
+                </div>
+                <div class="footer-p">
+                    <p class="footer_p">bla bla bla bla</p>
+                </div>
+            </div>
+            <div class="footer-lnks2">
+                <a class="contact_a" href="https://campus.ort.edu.ar/secundaria/belgrano/tic/2022-nr4d"><img class="ort-img" src="../imgs/logo_ort.png" alt="logo_ort"></a>
+            </div>
+        </div>          
+    </footer>
+
+
+    <script src="../js/config.js"></script>
+
+
+
+
+</body>
+</html>
