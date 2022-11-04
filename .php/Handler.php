@@ -1,6 +1,7 @@
 <?php
 
 include("./conexion.php");
+include("./config.html");
 
 
 $pass_login = $_POST ["pass_login"];
@@ -12,7 +13,8 @@ $pass_register = $_POST ["pass_register"];
 $pass2_register = $_POST ["pass2_register"];
 $mail_login = $_POST ["email_login"];
 
-//echo "INSERT INTO usuario (Username,Passenia,correo_electronico,Nombre_completo) values ('".$usuario_register."','".$pass_register."','".$mail_register."','".$name_register."')";
+
+
  
 
 if(isset($_POST['btn-primary-login']))
@@ -55,11 +57,13 @@ if(isset($_POST['btn-primary-register']))
     }
     else
     {
-        echo "<script> alert ('Las contraseñas no coinciden. Constatesé que sean iguales.'); window.location = 'index.php' </script>";
+        echo "<script> alert ('Las contraseñas no coinciden. Constátese que sean iguales.'); window.location = 'index.php' </script>";
     }
 
 }
 
+
+$change_name = $_POST ["chng_name"];
 
  
 

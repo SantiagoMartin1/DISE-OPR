@@ -52,7 +52,7 @@
                                      echo $_SESSION["newsession"];
                                     ?>
                                 </h3>
-                                <input type="text" id="txt-name" required
+                                <input type="text" id="txt-name" required name = "chng_name"
                                  minlength="4" maxlength="12" placeholder="Cambiar nombre">
                             </div>
                             <div class="sbmt-div">
