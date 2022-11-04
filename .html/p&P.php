@@ -50,7 +50,50 @@
         <div class="container-pyP">
             <form onsubmit="return Validate(this);" method="post" action="#">
                 <div class="dropZone">
-                <input type="file" name="my file" accept=".mp3 , .wav, .mid" id="fileInput" /><br />
+                <input type="file" name="my file" accept=".mp3 , .wav, .mid" id="fileInput"
+                
+                <?php
+                //función para obtener el nombre de las carpetas y los archivos en array multidimensional
+                function dirToArray($dir) {
+         
+                    //creo un array
+                    $listDir = array();
+         
+                    //abro los directorios contenidos en $dir
+                    if($handler = opendir($dir)) {
+         
+                        //leo todos los elementos contenidos 
+                        while (($file = readdir($handler)) !== FALSE) {
+         
+                            //verifico que hayan elementos
+                            if ($file != "." && $file != "..") {
+         
+                                /*si los elementos son archivos, guardo los elementos 
+                                en algún indice (dimensión) del array*/
+                                if(is_file($dir."/".$file)) {
+                                    $listDir[] = $file;
+         
+                                /*si los elementos son directorios, guardo los elementos 
+                                en otro índice o dimensión, repitiendo hasta que hayan elementos*/
+                                }elseif(is_dir($dir."/".$file)){
+                                    $listDir[$file] = dirToArray ($dir."/".$file);
+                                }
+                            }
+                        }
+                        closedir($handler);
+                    }
+                    return $listDir;
+                }
+                $dir = "xxx/";
+                $listDir = dirToArray($dir);    
+                echo $listDir[2][1];
+                if($listDir >= [1]){
+                    echo"<script> alert ('Array:" .$listDir."'); window.location = '../.html/p&P.php' </script>";
+                }
+                ?>
+
+                />
+                <br />
                 <h5 id="filename"></h5>
                 <input type="submit" value="Submit" onclick="Validate()" class="submit"/>
                 </div>
