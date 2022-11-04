@@ -6,6 +6,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    background-image: url(../imgs/bk1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .header--container{
     width: 100%;
     height: 65px;

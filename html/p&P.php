@@ -87,7 +87,7 @@
                 $dir = "xxx/";
                 $listDir = dirToArray($dir);    
                 echo $listDir[2][1];
-                if($listDir >= [1]){
+                if($listDir >= [0]){
                     echo"<script> alert ('Array:" .$listDir."'); window.location = '../.html/p&P.php' </script>";
                 }
                 ?>
@@ -95,7 +95,7 @@
                 />
                 <br />
                 <h5 id="filename"></h5>
-                <input type="submit" value="Submit" onclick="Validate()" class="submit"/>
+                <input type="submit" value="Submit" onclick="Validate()" class="submit" />
                 </div>
               </form>
         </div>
