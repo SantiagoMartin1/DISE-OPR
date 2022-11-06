@@ -6,7 +6,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.header--container{
+.main-header{
     width: 100%;
     height: 65px;
     display: flex;
@@ -19,42 +19,31 @@
     backdrop-filter: blur(15px);
 }
  
-header.nav-up{
-    top: -84px;
-}
-
-header.nav-down{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: #fff;
-    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
-}
-
-.header-lnks{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    align-self: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: .5vh 1.5vh;
-}
 
 .caja--logo{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    align-self: center;
-    flex-direction: column;
+    align-self: baseline;
+    flex-direction: row;
+    height: 100%;
+    padding: 20px;
 }
 
 .img-logo{
     display: flex;
     justify-content: flex-start;
-    align-items: baseline;
-     align-self: flex-start;
+    align-self: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+    align-self: center;
+    height: 100%;
+    padding: 5px 10px;
 }
 
 .btn-header{
@@ -63,10 +52,14 @@ header.nav-down{
     align-items: baseline;
     align-self: center;
     margin: 1vh;
-    font-size: 2.25vh;
+    font-size: 22px;
     font-weight: 400;
     color: black;
 } 
+
+.btn-header:hover{
+    color: #fff;
+}
 
 .header--usu{
     display: flex;
@@ -95,12 +88,12 @@ header.nav-down{
 
 .caja--main{
     display: flex;
-    width: 135vh;
-    height: 45vh;
+    width: 1350px;
+    height: 450px;
     background-color: #c09cff80;
-    padding: 10vh 10vh;
+    padding: 100px 100px;
     border-radius: 5px;
-    gap: 4vh;
+    gap: 40px;
 }
 
 .caja--textos{
@@ -109,14 +102,14 @@ header.nav-down{
     align-items: center;
     align-self: center;
     flex-direction: column;
-    gap: 3vh;
+    gap: 30px;
 }
 
 .titulo{
     display: flex;
     justify-content: flex-start;
     align-self: flex-start;
-    font-size: 7vh;
+    font-size: 70px;
     font-weight: 600;
     margin: 10px;
     letter-spacing: -0,015em;
@@ -124,7 +117,6 @@ header.nav-down{
     background: linear-gradient(180deg, #c09cff80, #00b7ff80);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 .p--info{
@@ -133,7 +125,7 @@ header.nav-down{
     align-items: center;
     align-self: flex-start;
     text-align: justify;
-    font-size: 2.25vh;
+    font-size: 22px;
     font-weight: 300;
 }
 
@@ -146,8 +138,8 @@ header.nav-down{
 }
 
 .console--img{
-    width: 40vh;
-    height: 25vh;
+    width: 400px;
+    height: 250px;
     border-radius: 5px;
 }
 
@@ -159,7 +151,7 @@ header.nav-down{
     padding: 10px 40px; 
     margin: 10px;
     border: 2px solid #fff;
-    border-radius: 2px;
+    border-radius: 5px;
     font-size: 14px;
     background: transparent;
     font-weight: 600;
@@ -209,7 +201,7 @@ header.nav-down{
     text-align: center;
 }
 .footer-main{
-    height: 15vh;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,16 +217,16 @@ header.nav-down{
     align-self: center;
     align-items: center;
     margin: 5px;
-    height: 2vh;
+    height: 20px;
     width: 20%;
-    gap: 4vh;
+    gap: 40px;
 }
 
 .footer_hr{
     position: absolute;
     align-self: flex-start;
     color: #fff;
-    width: 100vh;
+    width: 1000px;
 }
 
 .footer-lnks1{

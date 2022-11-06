@@ -132,7 +132,7 @@ main{
 .caja__trasera button{
     padding: 10px 40px;
     border: 2px solid #fff;
-    border-radius: 2px;
+    border-radius: 5px;
     font-size: 14px;
     background: transparent;
     justify-content: center;
