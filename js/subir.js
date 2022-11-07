@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     function processFile(file) {
       const docType = file.type;
-      const validExtensions = ['audio/midi', 'audio/mp3'];
+      const validExtensions = ['audio/midi', 'audio/mp3', 'audio/mpeg'];
     
       if (validExtensions.includes(docType)) {
         // archivo válido
@@ -83,6 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         // no es un archivo válido
         alert("No es un archivo válido");
+        console.log(file);
       }
   
     }
