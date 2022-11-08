@@ -22,13 +22,13 @@
                     <div class="nav-nav">
                         <ul class="nav--menu">
                             <div class="nav-hover">
-                                <li id="nav-lnks"><a id="nav-a" href="../html/config.html"><img class="settings-img" src="../imgs/settings_img.png" alt="settings-img"></a></li>
+                                <li id="nav-lnks"><a id="nav-a" href="../html/config.php"><img class="settings-img" src="../imgs/settings_img.png" alt="settings-img"></a></li>
                             </div>
                             <div class="nav-hover">
                                 <li id="nav-lnks"><a id="nav-a" href="../html/archivos.html"><img class="myFiles" src="../imgs/mis-archivos.png" alt="folder-img"></a></li>
                             </div>
                             <div class="nav-hover">
-                                <li id="nav-lnks"><a id="nav-a" href="archivos.html"><img class="upFiles" src="../imgs/subir-archivos.png" alt="subir-img"></a></li>
+                                <li id="nav-lnks"><a id="nav-a" href="../html/subir.html"><img class="upFiles" src="../imgs/subir-archivos.png" alt="subir-img"></a></li>
                             </div>
                             <div class="nav-hover">
                                 <li id="nav-lnks"><a id="nav-a" href="#"><img class="password-img" src="../imgs/change-password.png" alt="password-img"></a></li>

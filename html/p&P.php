@@ -10,7 +10,7 @@
 <body>
     <header class="main-header">
         <div class="volver-container">
-            <a href="#"><img src="#" alt="#"></a>
+            <a href="../html/principal.html"><img src="#" alt="#"></a>
         </div>
         <nav class="navbar">
             <div class="dropdown">

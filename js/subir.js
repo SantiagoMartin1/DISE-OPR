@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     button.addEventListener("click", (e) => {
       input.click();
+      console.log(file);
     });
   
     input.addEventListener("change", (e) => {
