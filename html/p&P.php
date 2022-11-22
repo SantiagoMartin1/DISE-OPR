@@ -30,22 +30,11 @@
     <main>
     <!--
         
-        pedir ayuda con el boton de transformada (que hacer?)
-
-        tambien pedir opion sobre como esta todo para poder mejorarlo
-
-        como hacer para que en la pagina principal una vez el user se registre / log in
-
-        deje de aparecer los tag de inicar sesion y registarse y aparezcan otros,
-
-        ademas de que una vez inicido sesion el user se puede desloguear y q si no tenes sesion iniciada o cuenta no te deje acceder
         
-        a esta pagina, debido a que no tenes cuenta, y salgo un "pop add" de que necesitas iniciar sesion
-
-        y menos importante pero que estaría bueno
-
-        el header de principal hacer que sea con scroll (pedir ayuda xq probe un codigo de google pero no funciono)
+    
         -->
+        
+
         
         <div class="container-pyP">
             <form onsubmit="return Validate(this);" method="post" action="#">
@@ -53,6 +42,7 @@
                 <input type="file" name="my file" accept=".mp3 , .wav, .mid" id="fileInput"
                 
                 <?php
+        /*
                 //función para obtener el nombre de las carpetas y los archivos en array multidimensional
                 function dirToArray($dir) {
          
@@ -70,28 +60,29 @@
          
                                 /*si los elementos son archivos, guardo los elementos 
                                 en algún indice (dimensión) del array*/
-                                if(is_file($dir."/".$file)) {
-                                    $listDir[] = $file;
+                             //   if(is_file($dir."/".$file)) {
+                               //     $listDir[] = $file;
          
                                 /*si los elementos son directorios, guardo los elementos 
                                 en otro índice o dimensión, repitiendo hasta que hayan elementos*/
-                                }elseif(is_dir($dir."/".$file)){
-                                    $listDir[$file] = dirToArray ($dir."/".$file);
-                                }
-                            }
-                        }
-                        closedir($handler);
-                    }
-                    return $listDir;
-                }
+                                //}elseif(is_dir($dir."/".$file)){
+                                //    $listDir[$file] = dirToArray ($dir."/".$file);
+                       //         }
+                       //     }
+                       // }
+                      //  closedir($handler);
+                   // }
+                    //return $listDir;
+               // } 
+                /*
                 $dir = "xxx/";
                 $listDir = dirToArray($dir);    
                 echo $listDir[2][1];
                 if($listDir >= [0]){
                     echo"<script> alert ('Array:" .$listDir."'); window.location = '../.html/p&P.php' </script>";
-                }
+                }*/
                 ?>
-
+                
                 />
                 <br />
                 <h5 id="filename"></h5>
