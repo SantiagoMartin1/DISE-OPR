@@ -22,7 +22,7 @@
                     <div class="nav-nav">
                         <ul class="nav--menu">
                             <div class="nav-hover">
-                                <li id="nav-lnks"><a id="nav-a" href="../html/config.php"><img class="settings-img" src="../imgs/settings_img.png" alt="settings-img"></a></li>
+                                <li id="nav-lnks"><a id="nav-a" href="../html/config.html"><img class="settings-img" src="../imgs/settings_img.png" alt="settings-img"></a></li>
                             </div>
                             <div class="nav-hover">
                                 <li id="nav-lnks"><a id="nav-a" href="../html/archivos.html"><img class="myFiles" src="../imgs/mis-archivos.png" alt="folder-img"></a></li>
@@ -40,6 +40,7 @@
                     <div class="main-name">
                         <form action="#" method="post">
                             <div class="name-chg">
+                                <h4 class="lang" key="h4">Esto es una prueba</h4>
                                 <h3 id="main-tittle">
                                     <?php
                                      session_start();   
@@ -59,15 +60,12 @@
                             <form action="#" class="form-idioma" method="post">
                                 <div class="idioma-chg">
                                     <label for="Idiomas">Cambiar Idioma: </label>
-                                    <select name="Idiomas" class="Idioma">
-                                        <option value="Ingles">Ingles</option>
-                                        <option value="Esnpaniol">Español</option>
-                                    </select>    
                                 </div>
-                                <div class="idioma-sbmt">
-                                    <input type="submit" value="Guardar cambios" class="btn-idiomas">
-                                </div>
-                                </form>
+                                <div class="flags-container">
+                                    <input type="image" src="../imgs/es-flag.jpg" class="translate" id="es">
+                                    <input type="image" src="../imgs/en-flag.jpg" class="translate" id="en">     
+                                </div>                              
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -98,5 +96,7 @@
             </div>          
         </footer>
     <script src="../js/config.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../multilanguaje-json/translate.js" charset="utf-8"></script>
 </body>
 </html>
