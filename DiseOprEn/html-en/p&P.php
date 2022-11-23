@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donde ocurre la magia</title>
+    <title>Where magic happens</title>
     <link rel="stylesheet"  href="../.css/p&P.css">
 </head>
 <body>
@@ -99,10 +99,10 @@
             </div>
             <div class="footer--info">
                 <div class="footer-h5">
-                    <h5 class="footer_h5">Sobre nosotros</h5>
+                    <h5 class="footer_h5">About Us</h5>
                 </div>
                 <div class="footer-p">
-                    <p class="footer_p">bla bla bla bla</p>
+                    <p class="footer_p">Group of students whose achievement is to pass this subject</p>
                 </div>
             </div>
             <div class="footer-lnks2">

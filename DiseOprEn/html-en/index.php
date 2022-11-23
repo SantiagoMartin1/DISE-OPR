@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login y Register</title>
+    <title>Login and Register</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
@@ -29,14 +29,14 @@
             <div class="contenedor__todo">
                 <div class="caja__trasera">
                     <div class="caja__trasera-login">
-                        <h3>¿Ya tenes cuenta?</h3>
-                        <p>Inicia sesión para entrar a la página</p>
-                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                        <h3>¿Already have an account?</h3>
+                        <p>Login to enter the page</p>
+                        <button id="btn__iniciar-sesion">Log In</button>
                     </div>
                     <div class="caja__trasera-register">
-                        <h3>Todavía no tenes cuenta?</h3>
-                        <p>Registrate para que puedas iniciar sesión</p>
-                        <button id="btn__registrarse">Registrarse</button>
+                        <h3>¿Don't have an account yet?</h3>
+                        <p>Register so you can log in</p>
+                        <button id="btn__registrarse">Register</button>
                     </div>
                 </div>
 
@@ -44,25 +44,25 @@
                 <div class="contenedor__login-register">
                     <!--Login-->
                     <form action="../.php/Handler.php" method="post" class="formulario__login">
-                        <h2>Iniciar Sesión</h2>
-                        <input  name = "email_login" type="email" placeholder="Correo Electronico">
-                        <input name = "pass_login" type="password" placeholder="Contraseña">
-                        <button id="btn-primary-login" value="OK" name="btn-primary-login">Entrar</button>
+                        <h2>Log In</h2>
+                        <input  name = "email_login" type="email" placeholder="Email">
+                        <input name = "pass_login" type="password" placeholder="Password">
+                        <button id="btn-primary-login" value="OK" name="btn-primary-login">Enter</button>
                         <div class="caja__contrasenia">
-                            <label for="contraseña">Olvidaste tu contraseña?</label>
-                            <p><a name="contraseña" href="../.php/restablecer.php">click para restablecer tu contraseña</a></p>
+                            <label for="contraseña">Forgot your password?</label>
+                            <p><a name="contraseña" href="../.php/restablecer.php">click to reset your password</a></p>
                         </div>
                     </form>
 
                     <!--Register-->
                     <form action="../.php/Handler.php" method="post" class="formulario__register">
-                        <h2>Regístrarse</h2>
-                        <input type="text" placeholder="Nombre completo" id="Nombre" name="nombre_register">
-                        <input type="email" placeholder="Correo Electronico" id="exampleInputEmail1" name="email_register">
-                        <input type="text" placeholder="Usuario" id="#" name="user_register">
-                        <input type="password" placeholder="Contraseña" id="exampleInputPassword1" name="pass_register">
-                        <input type="password" placeholder="Confirmar Contraseña" id="exampleInputPassword2" name="pass2_register">
-                        <button id="btn-primary-register" value="OKR" name="btn-primary-register">Regístrarse</button>
+                        <h2>Register</h2>
+                        <input type="text" placeholder="Full name" id="Nombre" name="nombre_register">
+                        <input type="email" placeholder="Email" id="exampleInputEmail1" name="email_register">
+                        <input type="text" placeholder="User" id="#" name="user_register">
+                        <input type="password" placeholder="Password" id="exampleInputPassword1" name="pass_register">
+                        <input type="password" placeholder="Confirm Password" id="exampleInputPassword2" name="pass2_register">
+                        <button id="btn-primary-register" value="OKR" name="btn-primary-register">Register</button>
                     </form>
                 </div>
             </div>
