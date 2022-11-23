@@ -9,7 +9,7 @@ $codigo= rand(1000,9999);
 
 
 // mensaje
-$mensaje = '
+$mensaje = '  fulvo'
 <html>
 <head>
   <title>Restablecer</title>
