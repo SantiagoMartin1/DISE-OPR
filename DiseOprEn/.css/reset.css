@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url(../imgs/bki2.jpg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-direction: row;
+}
+
+.container div form{
+    width: 50vh;
+    height: 40vh;
+    padding: 20px 10px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container div form h2{
+    font-size: 30px;
+    text-align: center;
+    color: #c09cff80;
+}
+
+.container div form label{
+    display: flex;
+    align-self: center;
+    width: 40%;
+    text-align: center;
+    font-size: medium;
+}
+
+.container div form input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+}
+
+.entrys-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.container div form button{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: flex-start;
+    padding: 10px 40px; 
+    border-radius: 2px;
+    border: none;
+    font-size: 14px;
+    background: #8c49ff80;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    transition: .2s all ease;
+}
+
+.container div form button:hover{
+    background: #b084fc80;
+    color: #fff;
+}

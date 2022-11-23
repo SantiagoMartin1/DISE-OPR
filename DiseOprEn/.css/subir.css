@@ -84,7 +84,7 @@ nav{
     justify-content: center;
     align-items: center;
     align-content: center;
-    background-color: black;
+    background-color: #fff;
     box-shadow: 2px 5px 20px
     rgba(119, 119, 119, .5);
     height: 500px;
@@ -202,182 +202,84 @@ main{
     justify-content: center;
     align-items: center;
     align-content: center;
-    flex-direction: column;
+    flex-direction: row;
     width: 600px;
-    height: 570px;
+    height: 100%;
     border-radius: 5px;
 }
 
-.main-name{
+.dranNdrop{
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     align-self: center;
+    justify-content: center;
+}
+
+.drag-area{
+    border: 3px dashed #ddd;
+    width: 350px;
+    height: 400px;
+    border-radius: 5px;
+    display: block;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-}
-
-.name-chg{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    flex-direction: row;
-    gap: 50px;
-    margin: 50px;
-}
+    justify-content: space-evenly;
+    margin: auto;
+  }
 
-#main-tittle{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    align-self: center;
-    font-size: 35px;
-}
+  .drag-area.active{
+      background-color: #b8d4fe;
+      color: black;
+      border: 2px dashed #618ac9;
+  }
 
-#txt-name{
+  .drag-area h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+  }
+
+  .drag-area span{
+      font-size: 25px;
+      color: #000;
+  }
+  .file-container{
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    align-self: center;
+    gap: 10px;
     padding: 10px;
-    border: none;
-    background: #F2F2F2;
-    font-size: 16px;
-    outline: none;
-    width: 100%;
+    border: solid 1px #ddd;
 }
 
-.sbmt-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-items: center;
+#preview{
+    margin-top: 10px;
 }
 
-.btn-name{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    border: 2px solid #fff;
-    border-radius: 2px;
-    font-size: 14px;
-    background: #8c49ff80;
-    font-weight: 600;
-    cursor: pointer;
-    color: #fff;
-    outline: none;
-    transition: .2s all ease;
-    padding: 10px 20px;  
-    margin: 10px;
+.status-text{
+    padding: 0 10px;
 }
 
-.btn-name:hover{
-    background: #b084fc80;
+.success{
+    color: #52ad5a;
 }
 
-.main-idioma{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    flex-direction: column;
-    margin: 60px;
+.failure{
+    color: #ff0000;
 }
 
-.form-idioma{
-    display: flex;
-    flex-direction: column;
-    gap: 3.5vh;
-}
-
-.idioma-chg{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    gap: 45px;
-    margin: 10px;
-}
-
-.flags-container{
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-}
-
-.flags-container a{
-    display: flex;
-    border-radius: 5px;
-    width: 150px;
-    height: 100px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.flags-container a:hover{
-    transform: scale(1.1);
-}
-
-.flags-container a img{
-    border-radius: 5px;
-}
-
-label{
-    display: flex;
+.drag-area button{
+    padding: 10px 25px;
     font-size: 20px;
-    color: #fff;
-    font-weight: 400;
-    letter-spacing: -0,015em;
-}
-
-select{
-    display: flex;
-    background-color: transparent;
-    border: none;
-    font-size: 16px;
-}
-
-select:focus{ 
+    border: 0;
     outline: none;
-}
-
-.idioma-sbmt{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-}
-
-
-.btn-idiomas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    border: 2px solid #fff;
-    border-radius: 2px;
-    font-size: 14px;
-    background: #8c49ff80;
-    font-weight: 600;
+    background-color: #5256ad;
+    color: white;
+    border-radius: 5px;
     cursor: pointer;
-    color: #fff;
-    outline: none;
-    transition: .2s all ease;
-    padding: 10px 20px;  
-    margin: 10px;
-}
-
-.btn-idiomas:hover{
-    background: #b084fc80;
-}
-
-.main-pswrd{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    height: 10px;
-    flex-direction: row;
+    margin: 20px;
 }
 
 .fgt-pswrd{

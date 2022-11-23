@@ -22,13 +22,13 @@
                     <div class="nav-nav">
                         <ul class="nav--menu">
                             <div class="nav-hover">
-                                <li id="nav-lnks"><a id="nav-a" href="../html/config.html"><img class="settings-img" src="../imgs/settings_img.png" alt="settings-img"></a></li>
+                                <li id="nav-lnks"><a id="nav-a" href="config.php"><img class="settings-img" src="../imgs/settings_img.png" alt="settings-img"></a></li>
                             </div>
                             <div class="nav-hover">
-                                <li id="nav-lnks"><a id="nav-a" href="../html/archivos.html"><img class="myFiles" src="../imgs/mis-archivos.png" alt="folder-img"></a></li>
+                                <li id="nav-lnks"><a id="nav-a" href="archivos.html"><img class="myFiles" src="../imgs/mis-archivos.png" alt="folder-img"></a></li>
                             </div>
                             <div class="nav-hover">
-                                <li id="nav-lnks"><a id="nav-a" href="../html/subir.html"><img class="upFiles" src="../imgs/subir-archivos.png" alt="subir-img"></a></li>
+                                <li id="nav-lnks"><a id="nav-a" href="subir.html"><img class="upFiles" src="../imgs/subir-archivos.png" alt="subir-img"></a></li>
                             </div>
                             <div class="nav-hover">
                                 <li id="nav-lnks"><a id="nav-a" href="#"><img class="password-img" src="../imgs/change-password.png" alt="password-img"></a></li>
@@ -40,7 +40,6 @@
                     <div class="main-name">
                         <form action="#" method="post">
                             <div class="name-chg">
-                                <h4 class="lang" key="h4">Esto es una prueba</h4>
                                 <h3 id="main-tittle">
                                     <?php
                                      session_start();   
@@ -48,10 +47,10 @@
                                     ?>
                                 </h3>
                                 <input type="text" id="txt-name" required name = "chng_name"
-                                 minlength="4" maxlength="12" placeholder="Cambiar nombre">
+                                 minlength="4" maxlength="12" placeholder="Enter your new name">
                             </div>
                             <div class="sbmt-div">
-                                <input type="submit" value="Cambiar nombre" class="btn-name">
+                                <input type="submit" value="Update my name" class="btn-name">
                             </div>
                         </form>                  
                     </div>
@@ -59,11 +58,11 @@
                         <div class="form-idioma">
                             <form action="#" class="form-idioma" method="post">
                                 <div class="idioma-chg">
-                                    <label for="Idiomas">Cambiar Idioma: </label>
+                                    <label for="Idiomas">Change Language: </label>
                                 </div>
                                 <div class="flags-container">
-                                    <input type="image" src="../imgs/es-flag.jpg" class="translate" id="es">
-                                    <input type="image" src="../imgs/en-flag.jpg" class="translate" id="en">     
+                                    <a href="../../html/config.php" class="translate" id="es"><img src="../imgs/es-flag.jpg" alt=""></a>
+                                    <a href="config.php" class="translate" id="en"><img src="../imgs/en-flag.jpg" alt=""></a>  
                                 </div>                              
                             </form>
                         </div>
@@ -84,7 +83,7 @@
                 </div>
                 <div class="footer--info">
                     <div class="footer-h5">
-                        <h5 class="footer_h5">Sobre nosotros</h5>
+                        <h5 class="footer_h5">About Us</h5>
                     </div>
                     <div class="footer-p">
                         <p class="footer_p">bla bla bla bla</p>
