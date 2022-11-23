@@ -39,7 +39,7 @@
         <div class="container-pyP">
             <form onsubmit="return Validate(this);" method="post" action="#">
                 <div class="dropZone">
-                <input type="file" name="my file" accept=".mp3 , .wav, .mid" id="fileInput"
+                <input type="file" name="my file" accept=".mp3 , .wav, .mid" id="fileInput" lang="en"
                 
                 <?php
         /*

@@ -84,7 +84,7 @@ nav{
     justify-content: center;
     align-items: center;
     align-content: center;
-    background-color: #fff;
+    background-color: black;
     box-shadow: 2px 5px 20px
     rgba(119, 119, 119, .5);
     height: 500px;
@@ -231,20 +231,20 @@ main{
 
   .drag-area.active{
       background-color: #b8d4fe;
-      color: black;
+      color: #fff;
       border: 2px dashed #618ac9;
   }
 
   .drag-area h2{
     font-size: 30px;
     font-weight: 500;
-    color: #000;
+    color: #fff;
     text-align: center;
   }
 
   .drag-area span{
       font-size: 25px;
-      color: #000;
+      color: #fff;
   }
   .file-container{
     display: flex;

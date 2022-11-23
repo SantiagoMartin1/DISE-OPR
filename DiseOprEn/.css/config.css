@@ -232,6 +232,7 @@ main{
     align-items: center;
     align-self: center;
     font-size: 35px;
+    color: #fff;
 }
 
 #txt-name{
@@ -311,7 +312,7 @@ main{
     border-radius: 5px;
     width: 150px;
     height: 100px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px 1px rgba(243, 239, 239, 0.2);
 }
 
 .flags-container a:hover{
@@ -384,7 +385,7 @@ select:focus{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: #fff;
     font-size: 13px;
     font-weight: 300;
 }

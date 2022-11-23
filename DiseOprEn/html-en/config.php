@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
     <header>
             <nav>
                 <a class="img-logo" href="principal.html"><img src="#" alt="#"></a>
-                <a href="account.html"><img class="user-logo" src="../imgs/user--logo.png" alt="logo_user"></a>
+                <a href="config.php"><img class="user-logo" src="../imgs/user--logo.png" alt="logo_user"></a>
             </nav>            
     </header>
         <div class="container-todo">
@@ -86,7 +86,7 @@
                         <h5 class="footer_h5">About Us</h5>
                     </div>
                     <div class="footer-p">
-                        <p class="footer_p">bla bla bla bla</p>
+                        <p class="footer_p">Group of students whose achievement is to pass this subject</p>
                     </div>
                 </div>
                 <div class="footer-lnks2">
