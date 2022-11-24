@@ -16,7 +16,7 @@
 
         <div class="header--container">
                 <nav>
-                    <a class="img-logo" href="principal.html"><img src="#" alt="#"></a>
+                    <a class="img-logo" href="principal.html"><img class="lgo_pyp" src="../imgs/lgo_pyp.png" alt="#"></a>
                     <a href="https://www.instagram.com/santi_.martin/"><img class="logo-ig" src="../imgs/logo--ig.png" alt="instagram"></a>
                     <a class="contact_a" href="https://campus.ort.edu.ar/secundaria/belgrano/tic/2022-nr4d"><img class="ort-img" src="../imgs/logo_ort.png" alt="logo_ort"></a>
                     <div class="card" id="mostrar-archivos">

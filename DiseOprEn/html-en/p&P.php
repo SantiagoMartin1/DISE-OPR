@@ -10,7 +10,7 @@
 <body>
     <header class="main-header">
         <div class="volver-container">
-            <a href="../html/principal.html"><img src="#" alt="#"></a>
+            <a href="../html/principal.html"><img class="lgo_pyp" src="../imgs/lgo_pyp.png" alt="#"></a>
         </div>
         <nav class="navbar">
             <div class="dropdown">

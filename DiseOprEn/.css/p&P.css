@@ -35,6 +35,12 @@ main{
     padding: 10px 20px;
 }
 
+.lgo_pyp{
+  display: flex;
+  height: 55px;
+  width: 55px;
+}
+
 .navbar{
     display: flex;
     flex-direction: row;

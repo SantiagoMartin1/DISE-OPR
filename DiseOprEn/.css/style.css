@@ -35,6 +35,12 @@ body{
     border-radius: 0 100px 100px 0;
 }
  
+.lgo_pyp{
+    display: flex;
+    height: 55px;
+    width: 55px;
+}
+
 .header--container:hover{
     margin-left: 0px;
 }

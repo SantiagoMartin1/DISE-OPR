@@ -6,6 +6,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.lgo_pyp{
+  display: flex;
+  height: 55px;
+  width: 55px;
+}
+
 main{
   background-image: url(../imgs/bki7.jpg);
   background-size: cover;

@@ -28,6 +28,12 @@ header{
     backdrop-filter: blur(15px);
 }
 
+.lgo_pyp{
+    display: flex;
+    height: 55px;
+    width: 55px;
+}
+
 nav{
     display: flex;
     width: 100%;

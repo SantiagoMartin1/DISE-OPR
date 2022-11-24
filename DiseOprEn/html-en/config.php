@@ -11,7 +11,7 @@
 <body>
     <header>
             <nav>
-                <a class="img-logo" href="principal.html"><img src="#" alt="#"></a>
+                <a class="img-logo" href="principal.html"><img class="lgo_pyp" src="../imgs/lgo_pyp.png" alt="#"></a>
                 <a href="config.php"><img class="user-logo" src="../imgs/user--logo.png" alt="logo_user"></a>
             </nav>            
     </header>
