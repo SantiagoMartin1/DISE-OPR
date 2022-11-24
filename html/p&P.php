@@ -102,7 +102,7 @@
                     <h5 class="footer_h5">Sobre nosotros</h5>
                 </div>
                 <div class="footer-p">
-                    <p class="footer_p">bla bla bla bla</p>
+                    <p class="footer_p">Grupo de alumnos cuyo obajetivo es aprobar esta materia ;)</p>
                 </div>
             </div>
             <div class="footer-lnks2">

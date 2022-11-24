@@ -50,7 +50,7 @@
                         <button id="btn-primary-login" value="OK" name="btn-primary-login">Enter</button>
                         <div class="caja__contrasenia">
                             <label for="contraseña">Forgot your password?</label>
-                            <p><a name="contraseña" href="../.php/restablecer.php">click to reset your password</a></p>
+                            <p><a name="contraseña" href="chgPswrd.html">click to reset your password</a></p>
                         </div>
                     </form>
 

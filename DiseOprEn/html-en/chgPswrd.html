@@ -4,43 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cambiar contraseña</title>
+    <title>Update my password</title>
     <link rel="stylesheet" type="text/css" href="../.css/restablecer.css">
 </head>
 <body>
-   <header>
-   </header>
+    <header class="main-header">
+        <div class="caja--logo">
+            <a class="img-logo" href="principal.html"><img class="lgo_pyp" src="../imgs/lgo_pyp.png" alt="#"></a>
+        </div>
+        <nav>
+            <a href="config.php">Back to menu</a>
+        </nav>
+</header>
    <main>
     <div class="main-container">
-        <form action="post" class="compare-pswrd"> <!--comparar pswrd con la base de datos, si es valida, dar el "tick", para que el usuario pueda cambiar su contraseña-->
+        <form action="#" class="compare-pswrd" method="post"> 
             <div class="chk-pswrd">
-                <label for="txt-chk">Ingrese su contraseña: </label>
-                <input type="password" id="txt-chk" required>
+                <label  for="txt-chk">Enter your new password: </label>
+                <input type="password" id="txt-chk" required placeholder="New password">
+                <input type="password" id="txt-chk" required placeholder="Confirm password">
             </div>
-        </form>
-        <form action="post" class="new-pswrd">
-            
+            <button class="btn-chg">Update password</button>
         </form>
     </div>
    </main>
-   <footer class="footer-main">
-    <div class="footer-container">
-        <hr class="footer_hr">
-        <div class="footer-lnks1">
-            <a href="https://www.instagram.com/santi_.martin/"><img class="logo-ig" src="./logo--ig.png" alt="instagram"></a>
-        </div>
-        <div class="footer--info">
-            <div class="footer-h5">
-                <h5 class="footer_h5">Sobre nosotros</h5>
-            </div>
-            <div class="footer-p">
-                <p class="footer_p">bla bla bla bla</p>
-            </div>
-        </div>
-        <div class="footer-lnks2">
-            <a class="contact_a" href="https://campus.ort.edu.ar/secundaria/belgrano/tic/2022-nr4d"><img class="ort-img" src="ort-logo.png" alt="logo_ort"></a>
-        </div>
-    </div>          
-</footer>
 </body>
 </html>

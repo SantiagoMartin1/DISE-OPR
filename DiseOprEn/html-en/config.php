@@ -31,7 +31,7 @@
                                 <li id="nav-lnks"><a id="nav-a" href="subir.html"><img class="upFiles" src="../imgs/subir-archivos.png" alt="subir-img"></a></li>
                             </div>
                             <div class="nav-hover">
-                                <li id="nav-lnks"><a id="nav-a" href="#"><img class="password-img" src="../imgs/change-password.png" alt="password-img"></a></li>
+                                <li id="nav-lnks"><a id="nav-a" href="chgPswrd.html"><img class="password-img" src="../imgs/change-password.png" alt="password-img"></a></li>
                             </div>
                             </ul>
                     </div>

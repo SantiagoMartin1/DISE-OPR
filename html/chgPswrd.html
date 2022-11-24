@@ -10,20 +10,21 @@
 <body>
     <header class="main-header">
         <div class="caja--logo">
-            <a class="img-logo" href="#"><img class="lgo_pyp" src="../imgs/lgo_pyp.png" alt="#"></a>
+            <a class="img-logo" href="principal.html"><img class="lgo_pyp" src="../imgs/lgo_pyp.png" alt="#"></a>
         </div>
         <nav>
-            <a href="../html/config.html">Volver al menu</a>
+            <a href="config.php">Volver al menu</a>
         </nav>
 </header>
    <main>
     <div class="main-container">
-        <form action="post" class="compare-pswrd"> 
+        <form action="#" class="compare-pswrd" method="post"> 
             <div class="chk-pswrd">
-                <label for="txt-chk">Ingrese su nueva contraseña: </label>
-                <input type="password" id="txt-chk" required>
-                <button>Cambiar contraseña</button>
+                <label  for="txt-chk">Ingrese su nueva contraseña: </label>
+                <input type="password" id="txt-chk" required placeholder="Nueva contraseña">
+                <input type="password" id="txt-chk" required placeholder="Confirmar contraseña">
             </div>
+            <button class="btn-chg">Cambiar contraseña</button>
         </form>
     </div>
    </main>

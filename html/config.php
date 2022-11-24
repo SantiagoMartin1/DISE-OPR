@@ -12,7 +12,7 @@
     <header>
             <nav>
                 <a class="img-logo" href="principal.html"><img class="lgo_pyp" src="../imgs/lgo_pyp.png" alt="#"></a>
-                <a href="account.html"><img class="user-logo" src="../imgs/user--logo.png" alt="logo_user"></a>
+                <a href="config.php"><img class="user-logo" src="../imgs/user--logo.png" alt="logo_user"></a>
             </nav>            
     </header>
         <div class="container-todo">
@@ -31,7 +31,7 @@
                                 <li id="nav-lnks"><a id="nav-a" href="../html/subir.php"><img class="upFiles" src="../imgs/subir-archivos.png" alt="subir-img"></a></li>
                             </div>
                             <div class="nav-hover">
-                                <li id="nav-lnks"><a id="nav-a" href="#"><img class="password-img" src="../imgs/change-password.png" alt="password-img"></a></li>
+                                <li id="nav-lnks"><a id="nav-a" href="chgPswrd.html"><img class="password-img" src="../imgs/change-password.png" alt="password-img"></a></li>
                             </div>
                             </ul>
                     </div>
@@ -41,12 +41,12 @@
                     <div class="main-name">
                         <form action="#" method="post">
                             <div class="name-chg">
-                                <h4 class="lang" key="h4">Esto es una prueba</h4>
                                 <h3 id="main-tittle">
                                     <?php
                                      session_start();   
                                      echo $_SESSION["newsession"];
                                     ?>
+                                    $usu_login
                                 </h3>
                                 <input type="text" id="txt-name" required name = "chng_name"
                                  minlength="4" maxlength="12" placeholder="Cambiar nombre">
@@ -88,7 +88,7 @@
                         <h5 class="footer_h5">Sobre nosotros</h5>
                     </div>
                     <div class="footer-p">
-                        <p class="footer_p">bla bla bla bla</p>
+                        <p class="footer_p">Grupo de alumnos cuyo obajetivo es aprobar esta materia ;)</p>
                     </div>
                 </div>
                 <div class="footer-lnks2">
