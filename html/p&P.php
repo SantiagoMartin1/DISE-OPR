@@ -14,17 +14,8 @@
         </div>
         <nav class="navbar">
             <div class="dropdown">
-                <button class="dropbtn" onclick="myFunction()"><img src="../imgs/user_Icon.png" alt="user_Icon" class="user-icon">
-                <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content" id="myDropdown">
-                    <a href="#">Configuración</a>
-                    <a href="#">Mis archivos</a>
-                    <a href="#">Log Out</a>
-                </div>
-            </div>
-            <a href="#">Home</a>
-            <a href="#">News</a>
+            <a href="config.php"><img src="../imgs/user_Icon.png" alt="Log In" class="user_Icon"></a>
+            <a id="nav-a" href="subir.html"><img class="upFiles" src="../imgs/subir-archivos.png" alt="subir-img"></a>          
         </nav>
     </header>
     <main>

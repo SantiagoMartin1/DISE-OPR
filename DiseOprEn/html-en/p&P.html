@@ -14,34 +14,14 @@
         </div>
         <nav class="navbar">
             <div class="dropdown">
-                <button class="dropbtn" onclick="myFunction()"><img src="../imgs/user_Icon.png" alt="user_Icon" class="user-icon">
-                <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content" id="myDropdown">
-                    <a href="#">Configuración</a>
-                    <a href="#">Mis archivos</a>
-                    <a href="#">Log Out</a>
-                </div>
-            </div>
-            <a href="#">Home</a>
-            <a href="#">News</a>
+            <a href="config.php"><img src="../imgs/user_Icon.png" alt="Log In" class="user_Icon"></a>
+            <a id="nav-a" href="subir.html"><img class="upFiles" src="../imgs/subir-archivos.png" alt="subir-img"></a>          
         </nav>
     </header>
     <main>
     <!--
         
-        
-    
-        -->
-        
-
-        
-        <div class="container-pyP">
-            <form onsubmit="return Validate(this);" method="post" action="#">
-                <div class="dropZone">
-                <input type="file" name="my file" accept=".mp3 , .wav, .mid" id="fileInput" lang="en"
-                
-                <?php
+        ?php
         /*
                 //función para obtener el nombre de las carpetas y los archivos en array multidimensional
                 function dirToArray($dir) {
@@ -81,9 +61,18 @@
                 if($listDir >= [0]){
                     echo"<script> alert ('Array:" .$listDir."'); window.location = '../.html/p&P.php' </script>";
                 }*/
-                ?>
+                ?
+    
+        -->
+        
+
+        
+        <div class="container-pyP">
+            <form onsubmit="return Validate(this);" method="post" action="#">
+                <div class="dropZone">
+                <input type="file" name="my file" accept=".mp3 , .wav, .mid" id="fileInput" lang="en"
                 
-                />
+                >
                 <br />
                 <h5 id="filename"></h5>
                 <input type="submit" value="Submit" onclick="Validate()" class="submit" />
