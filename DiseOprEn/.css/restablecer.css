@@ -27,7 +27,7 @@ body{
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
     top: 0px;
-    background: #c09cff80;
+    background-color: #00b7ff80;
     transition: all ease 0.5s;
 }
 
@@ -93,8 +93,10 @@ main{
 }
 
 .compare-pswrd{
+    gap: 10px;
+    margin-top: 100px;
     width: 50vh;
-    height: 40vh;
+    height: 100%;
     padding: 20px 10px;
     background: white;
     border-radius: 20px;
