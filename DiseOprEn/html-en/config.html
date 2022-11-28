@@ -12,7 +12,7 @@
     <header>
             <nav>
                 <a class="img-logo" href="principal.html"><img class="lgo_pyp" src="../imgs/lgo_pyp.png" alt="#"></a>
-                <a href="config.php"><img class="user-logo" src="../imgs/user--logo.png" alt="logo_user"></a>
+                <a href="config.html"><img class="user-logo" src="../imgs/user--logo.png" alt="logo_user"></a>
             </nav>            
     </header>
         <div class="container-todo">
@@ -22,7 +22,7 @@
                     <div class="nav-nav">
                         <ul class="nav--menu">
                             <div class="nav-hover">
-                                <li id="nav-lnks"><a id="nav-a" href="config.php"><img class="settings-img" src="../imgs/settings_img.png" alt="settings-img"></a></li>
+                                <li id="nav-lnks"><a id="nav-a" href="config.html"><img class="settings-img" src="../imgs/settings_img.png" alt="settings-img"></a></li>
                             </div>
                             <div class="nav-hover">
                                 <li id="nav-lnks"><a id="nav-a" href="archivos.html"><img class="myFiles" src="../imgs/mis-archivos.png" alt="folder-img"></a></li>
@@ -45,6 +45,7 @@
                                      session_start();   
                                      echo $_SESSION["newsession"];
                                     ?>
+                                    $usu_login
                                 </h3>
                                 <input type="text" id="txt-name" required name = "chng_name"
                                  minlength="4" maxlength="12" placeholder="Enter your new name">
@@ -61,8 +62,8 @@
                                     <label for="Idiomas">Change Language: </label>
                                 </div>
                                 <div class="flags-container">
-                                    <a href="../../html/config.php" class="translate" id="es"><img src="../imgs/es-flag.jpg" alt=""></a>
-                                    <a href="config.php" class="translate" id="en"><img src="../imgs/en-flag.jpg" alt=""></a>  
+                                    <a href="../../html/config.html" class="translate" id="es"><img src="../imgs/es-flag.jpg" alt=""></a>
+                                    <a href="config.html" class="translate" id="en"><img src="../imgs/en-flag.jpg" alt=""></a>  
                                 </div>                              
                             </form>
                         </div>
