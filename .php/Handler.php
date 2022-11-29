@@ -2,6 +2,7 @@
 
 include("./conexion.php");
 include("./config.html");
+include("./subir.php");
 
 
 $pass_login = $_POST ["pass_login"];
@@ -12,6 +13,10 @@ $usuario_register = $_POST ["user_register"];
 $pass_register = $_POST ["pass_register"];
 $pass2_register = $_POST ["pass2_register"];
 $mail_login = $_POST ["email_login"];
+
+
+$onsubmit = $_POST["sonido"];
+
 
 
 
@@ -62,8 +67,7 @@ if(isset($_POST['btn-primary-register']))
 
 }
 
-
-$change_name = $_POST ["chng_name"];
+ 
 
  
 
