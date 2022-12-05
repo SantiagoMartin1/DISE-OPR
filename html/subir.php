@@ -57,19 +57,30 @@
                 </nav>
                 <div class="main-config">
                     <div class="dranNdrop">
-                        <form onsubmit="return Validate(this);" action="../.php/Handler.php" method="post" name="form_onsubmit">
-                            
                         
-                            <div class = "drag-area">
+                            
+                    <form action="../.php/upload.php" method="post" enctype="multipart/form-data">
                                 <h2>Subí tu .midi ó .mp3</h2>
+                                <input type="file" name="fileToUpload" id="fileToUpload">
+                                <input type="submit" value="Upload Image" name="submit">
+                                <?php
+                                    if (isset($_GET['mensaje'])){
+                                        echo "<div id='preview'><label style='color:white;'>".$_GET['mensaje']."</label></div>";         
+                                    }
+
+                                    ?>
+                                                            
+                                <!--                    
                                 <span>0</span>
                                 <button>Selecciona tus archivos</button>
-                                <input type="file" name="sonido" id="input-file" hidden multiple accept=".mp3 , .wav, .mid" />
-                            </div>
+                                <input type="file" name="file" id="input-file"  hidden multiple accept=".mp3 , .wav, .mid" />
+                                -->
+                    </form>
                             
-                            <div id="preview"></div>
-
-                        </form>
+                        
+                            
+                            
+                        
                     </div>                  
                 </div>
             </div>
