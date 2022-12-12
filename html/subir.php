@@ -55,10 +55,9 @@
                             </ul>
                     </div>
                 </nav>
+                
                 <div class="main-config">
                     <div class="dranNdrop">
-                        
-                            
                     <form action="../.php/upload.php" method="post" enctype="multipart/form-data">
                                 <h2>Subí tu .midi ó .mp3</h2>
                                 <input type="file" name="fileToUpload" id="fileToUpload">
@@ -73,10 +72,10 @@
                                 <!--                    
                                 <span>0</span>
                                 <button>Selecciona tus archivos</button>
-                                <input type="file" name="file" id="input-file"  hidden multiple accept=".mp3 , .wav, .mid" />
+                                 <input type="file" name="file" id="input-file"  hidden multiple accept=".mp3 , .wav, .mid" />
                                 -->
                     </form>
-                            
+                                     
                         
                             
                             
