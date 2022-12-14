@@ -2,7 +2,7 @@
 
 
 include("./conexion.php");
-include(".../DiseOprEn/chgPswrd.php");
+include("../DiseOprEn/chgPswrd.php");
 session_start();
 
 
