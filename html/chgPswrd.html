@@ -18,11 +18,11 @@
 </header>
    <main>
     <div class="main-container">
-        <form action="#" class="compare-pswrd" method="post"> 
+        <form action="../.php/change-password.php" class="compare-pswrd" method="post"> 
             <div class="chk-pswrd">
                 <label  for="txt-chk">Ingrese su nueva contraseña: </label>
-                <input type="text" id="txt-chk" required placeholder="Usuario">
-                <input type="password" id="txt-chk" required placeholder="Nueva contraseña">
+                <input name = "usuario_actual" type="text" id="txt-chk" required placeholder="Usuario">
+                <input name= "cambiar_pass" type="password" id="txt-chk" required placeholder="Nueva contraseña">
                 <input type="password" id="txt-chk" required placeholder="Confirmar contraseña">
             </div>
             <button class="btn-chg">Cambiar contraseña</button>

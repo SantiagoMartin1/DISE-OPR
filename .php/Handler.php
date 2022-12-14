@@ -29,7 +29,7 @@ if(isset($_POST['btn-primary-login']))
 
     if($row = 1)
     {
-        $_SESSION["email"] = $mail_login;
+        $_SESSION["mail"] = $mail_login;
         echo "<script> alert ('Bienvenido,".$usu_login."'); window.location = '../.html/principal.html' </script>";
     }
     else

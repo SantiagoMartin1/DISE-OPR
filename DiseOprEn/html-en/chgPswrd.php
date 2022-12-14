@@ -18,11 +18,11 @@
 </header>
    <main>
     <div class="main-container">
-        <form action="#" class="compare-pswrd" method="post"> 
+        <form action="DISE-OPR/.php/change-password.php" class="compare-pswrd" method="post"> 
             <div class="chk-pswrd">
                 <label  for="txt-chk">Enter your new password: </label>
-                <input type="text" id="txt-chk" required placeholder="User name">
-                <input type="password" id="txt-chk" required placeholder="New password">
+                <input  name = "actual_user" type="text" id="txt-chk" required placeholder="User name">
+                <input  name = "chng_pass" type="password" id="txt-chk" required placeholder="New password">
                 <input type="password" id="txt-chk" required placeholder="Confirm password">
             </div>
             <button class="btn-chg">Update password</button>

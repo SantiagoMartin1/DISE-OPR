@@ -1,20 +1,28 @@
 <?php
 
-include("ChgPswrd.html");
+
+include("./conexion.php");
+include(".../DiseOprEn/chgPswrd.php");
 session_start();
 
-$cambiar = $_POST ["Cambiar_pass"];
 
-$mail_login = $_SESSION["mail"];
+$pass = $_POST["chng_pass"];
+$user = $_POST["actual_user"];
+
+
+
+
+//$_SESSION["cambiar_pass"] = $_cambiar;
+
 
 if(isset($_POST[$cambiar]))
 {
-    $query3 = mysqli_query($conn,"UPDATE    = '".$mail_login."'");
+    $query3 = mysqli_query($conn,"UPDATE proyecto 2022 set passenia = '".$pass."' WHERE usuario = '".$user."'");
     $row = mysqli_num_rows($query);
 
     if($row = 1)
     {
-        echo "<script> alert ('Bienvenido,".$usu_login."'); window.location = '../.html/principal.html' </script>";
+        echo "<script> window.location = '../.html/chgPswrd.hhtml' </script>";
     }
     else
     {
