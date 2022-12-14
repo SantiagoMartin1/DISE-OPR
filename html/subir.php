@@ -58,13 +58,13 @@
                 
                 <div class="main-config">
                     <div class="dranNdrop">
-                    <form action="../.php/upload.php" method="post" enctype="multipart/form-data">
-                                <h2>Subí tu .midi ó .mp3</h2>
+                    <form action="../../.php/upload.php" method="post" enctype="multipart/form-data">
+                                <h2>Upload your .midi or .mp3 file</h2>
                                 <input type="file" name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload Image" name="submit">
                                 <?php
                                     if (isset($_GET['mensaje'])){
-                                        echo "<div id='preview'><label style='color:white;'>".$_GET['mensaje']."</label></div>";         
+                                        echo "<div id='preview'><label style='color:green;'>".$_GET['mensaje']."</label></div>";         
                                     }
 
                                     ?>

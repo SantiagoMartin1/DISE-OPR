@@ -11,8 +11,27 @@
 <body>
     <header>
             <nav>
-                <a class="img-logo" href="principal.html"><img class="lgo_pyp" src="../imgs/lgo_pyp.png" alt="#"></a>
-                <a href="config.html"><img class="user-logo" src="../imgs/user--logo.png" alt="logo_user"></a>
+                <a class="img-logo" href="principal.html"><img src="#" alt="#"></a>
+                <button onclick="salir()"><img class="user-logo" src="../imgs/user--logo.png" alt="logo_user">
+                    <!--
+                    <?php
+                    session_start();
+                    session_destroy();
+                   
+                    echo '<script language="javascript">
+                       alert("..:: SESIÓN CERRADA CORRECTAMENTE ::..");
+                       window.location.href = "../index";
+                       </script>';
+                   ?>
+                    -->
+                    
+                </button>
+                <script>
+                    document.getElementById('logoff').addEventListener('click', salir);
+                    function salir() {
+                        window.location.href = 'index.php';
+                    }
+                </script>
             </nav>            
     </header>
         <div class="container-todo">
@@ -28,29 +47,39 @@
                                 <li id="nav-lnks"><a id="nav-a" href="archivos.html"><img class="myFiles" src="../imgs/mis-archivos.png" alt="folder-img"></a></li>
                             </div>
                             <div class="nav-hover">
-                                <li id="nav-lnks"><a id="nav-a" href="subir.html"><img class="upFiles" src="../imgs/subir-archivos.png" alt="subir-img"></a></li>
+                                <li id="nav-lnks"><a id="nav-a" href="../html/subir.html"><img class="upFiles" src="../imgs/subir-archivos.png" alt="subir-img"></a></li>
                             </div>
                             <div class="nav-hover">
-                                <li id="nav-lnks"><a id="nav-a" href="chgPswrd.html"><img class="password-img" src="../imgs/change-password.png" alt="password-img"></a></li>
+                                <li id="nav-lnks"><a id="nav-a" href="./chgPswrd.php"><img class="password-img" src="../imgs/change-password.png" alt="password-img"></a></li>
                             </div>
                             </ul>
                     </div>
                 </nav>
+                
                 <div class="main-config">
                     <div class="dranNdrop">
-                        <form class="upload-form" onsubmit="return Validate(this);" action="#" method="post">
-                            
-                            <div class = "drag-area">
-                                <h2>Upload your .midi / .mp3</h2>
-                                <span>0</span>
-                                <button>Select your files</button>
-                                <input type="file" name="sonido" id="input-file" hidden multiple accept=".mp3 , .wav, .mid" />
-                            </div>
-                            
-                            <div id="preview"></div>
+                    <form action="../../.php/upload.php" method="post" enctype="multipart/form-data">
+                                <h2>Upload your .midi or .mp3 file</h2>
+                                <input type="file" name="fileToUpload" id="fileToUpload">
+                                <input type="submit" value="Upload File" name="submit">
+                                <?php
+                                    if (isset($_GET['mensaje'])){
+                                        echo "<div id='preview'><label style='color:green;'>".$_GET['mensaje']."</label></div>";         
+                                    }
 
-                            <button id="btn-up" class="up-files">Upload your files</button>
-                        </form>
+                                    ?>
+                                                            
+                                <!--                    
+                                <span>0</span>
+                                <button>Selecciona tus archivos</button>
+                                 <input type="file" name="file" id="input-file"  hidden multiple accept=".mp3 , .wav, .mid" />
+                                -->
+                    </form>
+                                     
+                        
+                            
+                            
+                        
                     </div>                  
                 </div>
             </div>
@@ -68,10 +97,10 @@
                 </div>
                 <div class="footer--info">
                     <div class="footer-h5">
-                        <h5 class="footer_h5">About Us</h5>
+                        <h5 class="footer_h5">Sobre nosotros</h5>
                     </div>
                     <div class="footer-p">
-                        <p class="footer_p">Group of students whose achievement is to pass this subject</p>
+                        <p class="footer_p">bla bla bla bla</p>
                     </div>
                 </div>
                 <div class="footer-lnks2">
