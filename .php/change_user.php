@@ -24,11 +24,12 @@ $nombre = $_POST["chng_name"];
     if($query4)
     {   
         // echo "bien";
-        echo "<script> alert ('realizado con exito'); window.location = '../DiseOprEn/html-en/config.html' </script>";
+        //echo "<script> alert ('realizado con exito,$nombre'); window.location = '../DiseOprEn/html-en/config.html' </script>";
+        echo $nombre;
     }
     else
     {
-       echo "<script> alert ('usuario no existe'); window.location = './DiseOprEn/html-en/config.html' </script>"; 
+      // echo "<script> alert ('usuario no existe'); window.location = './DiseOprEn/html-en/config.html' </script>"; 
         
         //   echo "mal"; 
     }

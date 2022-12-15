@@ -1,54 +1,46 @@
 <?php
 
 
-include("./conexion.php");
-include("../DiseOprEn/chgPswrd.php");
-session_start();
 
+session_start();    
+include("conexion.php");
+
+
+
+
+// echo $_SESSION["mail"];
 
 $pass = $_POST["chng_pass"];
 $user = $_POST["actual_user"];
 
 
+// if(isset($_POST["btn_name"]))
+// {
 
+    $query5 = mysqli_query($conn,"UPDATE usuario SET Passenia = '".$pass."' WHERE Username = '".$user."'");
+    // $row = mysqli_num_rows($query4);
 
-//$_SESSION["cambiar_pass"] = $_cambiar;
+    // var_dump($query4);
 
-
-if(isset($_POST[$cambiar]))
-{
-    $query3 = mysqli_query($conn,"UPDATE proyecto 2022 set passenia = '".$pass."' WHERE usuario = '".$user."'");
-    $row = mysqli_num_rows($query3);
-
-    if($row = 1)
-    {
-        echo "<script> window.location = '../.html/chgPswrd.hhtml' </script>";
+    if($query5)
+    {   
+        // echo "bien";
+        echo "<script> alert ('realizado con exito'); window.location = '../DiseOprEn/html-en/config.html' </script>";
     }
     else
     {
-        echo "<script> alert ('usuario no existe'); window.location = '../.html/index.php' </script>"; 
-           
+       echo "<script> alert ('usuario no existe'); window.location = './DiseOprEn/html-en/config.html' </script>"; 
+        
+        //   echo "mal"; 
     }
+    
+// }
+// else
+// {
+//     //echo "<script> alert ('error'); window.location = './DiseOprEn/html-en/config.html' </script>"; 
+// }
+// echo $_SESSION["mail"];
+//header("Location: ../DiseOprEn/html-en/config.html");
 
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 ?>
