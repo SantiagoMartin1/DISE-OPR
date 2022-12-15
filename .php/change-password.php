@@ -18,7 +18,7 @@ $user = $_POST["actual_user"];
 if(isset($_POST[$cambiar]))
 {
     $query3 = mysqli_query($conn,"UPDATE proyecto 2022 set passenia = '".$pass."' WHERE usuario = '".$user."'");
-    $row = mysqli_num_rows($query);
+    $row = mysqli_num_rows($query3);
 
     if($row = 1)
     {
