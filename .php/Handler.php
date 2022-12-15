@@ -21,6 +21,7 @@ $pass_login = $_POST ["pass_login"];
 
 
 $_SESSION["mail"] = $mail_login;
+$_SESSION["username"] = $usuario_register;
 
 
 
